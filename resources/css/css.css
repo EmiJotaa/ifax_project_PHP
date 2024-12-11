@@ -7,13 +7,8 @@
 
 /*BLOCOS*/
 @import 'blocos/slider_banner.css';
-@import 'blocos/videos.css';
-@import 'blocos/call_to_action.css';
 @import 'blocos/quem_somos.css';
-@import 'blocos/donate.css';
-@import 'blocos/logos.css';
-@import 'blocos/noticias.css';
-@import 'blocos/contatos.css';
+@import 'blocos/call_to_action.css';
 
 /*FOOTER*/
 @import 'reset/footer.css';
