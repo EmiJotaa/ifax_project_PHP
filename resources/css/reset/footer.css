@@ -1,0 +1,238 @@
+footer
+{
+	width: 100%;
+	display: block;
+	background-image: url('../../imagens/flores2.png');
+	background-position: bottom;
+	background-size: cover;
+	padding-top: 30px;
+}
+footer .principal
+{
+	padding-bottom: 40px;
+}
+footer .principal .conteudo
+{
+	width: 100%;
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+  	justify-content: flex-start;
+  	align-items: flex-start;
+}
+footer .principal .conteudo .logo,
+footer .principal .conteudo .menu,
+footer .principal .conteudo .contatos
+{
+	width: 100%;
+}
+footer .principal .conteudo .menu,
+footer .principal .conteudo .contatos
+{
+	margin-top: 25px;
+}
+footer .principal .conteudo .logo
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-size: 25px;
+}
+footer .principal .conteudo .logo > a
+{
+	display: flex;
+  	width: 100%;
+  	align-items: center;
+
+}
+footer .principal .conteudo .logo > a img
+{
+	width: max-content;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+footer .principal .conteudo .logo p
+{
+	width: 100%;
+	display: block;
+	margin: 30px 0;
+	text-align: center;
+}
+footer .principal .conteudo .logo .redes-sociais
+{
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+footer .principal .conteudo .logo .redes-sociais a
+{
+	width: max-content;
+	display: block;
+	margin: 0px 12px;
+}
+footer .principal .conteudo .logo .redes-sociais  a i
+{
+	font-size: 30px;
+	transition: .4s;
+}
+footer .principal .conteudo .logo .redes-sociais  a:hover i{
+	transform: scale(1.2);
+}
+footer .principal .conteudo .menu .titulo,
+footer .principal .conteudo .contatos .titulo
+{
+	font-size: 40px;
+	margin-bottom: 35px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+footer .principal .conteudo .menu nav
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+footer .principal .conteudo .menu nav a
+{
+	margin-bottom: 28px;
+}
+footer .principal .conteudo .contatos
+{
+	width: 100%;
+	display: block;		
+}
+footer .principal .conteudo .contatos .item
+{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 45px;
+}
+footer .principal .conteudo .menu nav a:last-child,
+footer .principal .conteudo .contatos .item:last-child
+{
+	margin-bottom: 0;
+}
+footer .principal .conteudo .contatos .item .icone
+{
+	width: 48px;
+	text-align: center;
+}
+footer .principal .conteudo .contatos .item .icone i
+{
+	font-size: 30px;	
+}
+footer .principal .conteudo .contatos .item .info
+{
+	width: calc(100% - 48px);
+}
+footer .principal .conteudo .contatos .item .info h4
+{
+	font-size: 18px;
+	font-family: var(--font-family-bold);
+}
+footer .principal .conteudo .contatos .item .info a
+{
+	display: block;
+	width: 100%;
+	font-size: 20px;
+}
+footer .copyright
+{
+	width: 100%;
+	display: block;
+	padding: 15px 0;
+	border-top: 5px dashed var(--color-destaque);
+}
+footer .copyright .conteudo
+{	
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+footer .copyright .conteudo p
+{
+	font-size: 20px;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+@media only screen and (min-width:769px)
+{
+	footer .principal .conteudo .logo,
+	footer .principal .conteudo .menu,
+	footer .principal .conteudo .contatos
+	{
+	width: 33%;
+	padding-right: 50px;
+	}
+	footer .principal .conteudo .logo > a img{
+		padding-top: 35px;
+	}
+	footer .principal .conteudo .menu .titulo,
+	footer .principal .conteudo .contatos .titulo{
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	footer .copyright .conteudo p
+	{
+	width: max-content;
+	max-width: 100%%;
+	}
+	footer .principal .conteudo .menu
+	{
+		width: 33%;
+	}
+}
+@media only screen and (min-width:1025px)
+{
+	footer .principal .conteudo .logo,
+	footer .principal .conteudo .menu,
+	footer .principal .conteudo .contatos
+	{
+	width: 33%;
+	padding-right: 50px;
+	}
+	footer .principal .conteudo .menu,
+	footer .principal .conteudo .contatos
+	{
+		margin-top: 0px;
+	}
+	footer .principal .conteudo .contatos
+	{
+		padding-right: 0px;
+	}
+	footer .principal .conteudo .logo > a
+	{
+		display: block;
+	}
+	footer .principal .conteudo .logo > a img
+	{
+		margin: 0;
+		max-height: 180px;
+		padding-top: 0px;
+	}
+	footer .principal .conteudo .logo p
+	{
+		text-align: left;	
+		font-size: 20px;
+	}
+	footer .principal .conteudo .logo .redes-sociais
+	{
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+	}
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Perisphere';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('../../fonts/perisphere/Perisphere.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Swis721 BT';
+    src: url('Swiss721BT-Roman.woff2') format('woff2');
+    src: url('../../fonts/swis721/Swiss721BT-Roman.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

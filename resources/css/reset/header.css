@@ -1,0 +1,217 @@
+header 
+{
+	width: 100%;
+	display: block;
+	position: relative;
+	background-image: url('../../imagens/flores.jpg');
+	background-position: right;
+	background-size: cover;
+}
+header .conteudo
+{
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+header .conteudo .topo
+{
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15px;
+	z-index: 2;	
+}
+header .conteudo .logo img
+{
+	display: block;
+	align-items: center;
+	justify-content: center;
+	max-height: 200px;
+}
+header .conteudo .topo .redes-sociais
+{
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+header .conteudo .topo .redes-sociais a
+{
+	width: max-content;
+	display: block;
+	margin: 0px 12px;
+	font-size: 25px;
+	transition: .4s;
+}
+header .conteudo .topo .redes-sociais a:hover{
+	transform: scale(1.2);
+}
+header .conteudo .topo .redes-sociais  a i
+{
+	font-size: 25px;
+}
+header .conteudo .topo .contatos{
+	width: 100%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+header .conteudo .topo .contatos a
+{
+	margin: 5px 0;
+	font-size: 16px;
+	transition: .4s;
+}
+header .conteudo .topo .contatos a:hover{
+	transform: scale(1.1);
+}
+header .conteudo .topo .contatos a i
+{
+	margin-right: 10px;
+}
+header .conteudo .logo{
+	width: max-content;
+	max-width: 180px;
+	display: block;
+	padding-bottom: 10px;
+}
+header .conteudo .logo a
+{
+	display: block;
+	width: max-content;
+	margin: 0 auto;
+}
+header .conteudo .menu{
+	width: max-content;
+	display: block;
+}
+header .conteudo .menu nav
+{
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--color-destaque);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 50px 25px;
+	position: fixed;
+	top: 0;
+	left: -100vw;
+	transition: .30s;
+	z-index: 3;
+	-webkit-box-shadow: 0px 14px 20px 12px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 14px 20px 12px rgba(0,0,0,0.75);
+	box-shadow: 0px 14px 20px 0px rgba(0,0,0,0.75);
+}
+header .conteudo .menu.active nav
+{
+	left: 0px;
+}
+header .conteudo .menu nav a{
+	padding: 13px 0px;
+	font-family: var(--font-family-perisphere);
+	transition: .4s;
+	font-size: 30px;
+}
+header .conteudo .menu nav a:hover{
+	transform: scale(1.1);
+	background-color: #5B360D;
+	opacity: 0.4;
+	color: var(--color-white);
+	border: 1px solid #5B360D;
+	padding: 10px;
+	border-radius: 50px;
+}
+header .conteudo .menu a i{
+	font-size: 40px;
+}
+header .conteudo .menu.active .btn-nav
+{
+	position: absolute;
+	z-index: 4;
+	transform: translateY(-30PX) translateX(-40px);
+	transition: .30s;
+}
+@media only screen and (min-width: 768px)
+{
+	header .conteudo .menu.active a i{
+		margin-top: 85px;
+	}
+	header .conteudo .topo .redes-sociais
+	{
+		width: max-content;
+	}
+	header .conteudo .topo .redes-sociais a:first-child
+	{
+		margin-left: 0px;
+	}
+	header .conteudo .topo .redes-sociais a:last-child
+	{
+		margin-right: 0px;
+	}
+	header .conteudo .topo .redes-sociais  a i
+	{
+		font-size: 22px;
+	}
+	header .conteudo .topo .contatos
+	{
+		flex-direction: row;
+		width: max-content;
+	}
+	header .conteudo .topo .contatos a
+	{
+		margin: 0 35px 0 0;
+	}
+	header .conteudo .topo .contatos a:last-child
+	{
+		margin: 0;
+	}	
+	header .conteudo .menu.active .btn-nav{
+		transform: translateY(-100PX) translateX(-40px);
+	}		
+}
+@media only screen and (min-width: 1160px)
+{
+	header .conteudo .logo
+	{
+		width: 100%;
+		max-width: 100%;
+		margin-top: -25px;
+	}
+
+	header .conteudo .menu
+	{
+		width: 100%;
+	}
+	header .conteudo .menu nav
+	{
+		max-width: 1000px;
+		height: auto;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		margin: 0 auto;
+		padding: 0px 50px;
+		position: relative;
+		top: initial;
+		left: initial;
+		border-radius: 50px;
+
+	}
+	header .conteudo .menu nav a{
+		font-size: 23px;
+	}
+	header .conteudo .menu a.btn-nav
+	{
+		display: none;
+	}
