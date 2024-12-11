@@ -20,4 +20,25 @@
 		</div>
 	</div>
 </section>
+<section class="quem_somos">
+	<div class="container">
+		<div class="conteudo">
+			<div class="texto">
+				<h2 class="titulo">Quem somos</h2>
+				<div class="descricao">
+					<p>Somos especializados em manutenção e instalação de som automotivo, oferecendo a melhor experiência sonora.Garantimos satisfação e segurança em nossos serviços.</p>
+						<p>
+						Realizamos diagnósticos e reparos, sempre com as melhores marcas. Personalizamos nossas soluções para atender às necessidades únicas de cada cliente.</p>
+				</div>
+				<a href="" class="btn">Continue lendo</a>
+			</div>
+			<div class="video">
+				<a href="https://www.instagram.com/reel/C-Yj2J7Smy7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
+					<img src="<?=URL_BASE?>resources/imagens/quem-somos.png">
+					<i class="fas fa-play"></i>
+				</a>				
+			</div>
+		</div>
+	</div>
+</section>
 <?=$this->fetch('commons/footer.php', $data)?>
