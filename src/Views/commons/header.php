@@ -50,9 +50,9 @@
                             <i class="fas fa-mobile-screen-button"></i>
                             (61)98142-2758
                         </a>
-                        <a href="mailto:mrcez4rr@gmail.com">
+                        <a href="mailto:institutoifax@gmail.com">
                             <i class="far fa-envelope"></i>
-                            mrcez4rr@gmail.com
+                            institutoifax@gmail.com
                         </a>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 <div class="menu">
                     <nav>
                         <a href="<?=URL_BASE?>">Home</a>
-                        <a href="<?=URL_BASE?>">Quem somos</a>
+                        <a href="<?=URL_BASE?>quem-somos">Quem somos</a>
                         <a href="<?=URL_BASE?>donate">Faça uma doação</a>
                         <a href="<?=URL_BASE?>">Videos</a>
                         <a href="<?=URL_BASE?>">Fale Conosco</a>

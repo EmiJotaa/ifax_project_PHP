@@ -27,7 +27,7 @@
                     		<a href="#">
                     			<i class="fas fa-chevron-right"></i>Home               				
                     		</a>
-                    		<a href="#">
+                    		<a href="<?=URL_BASE?>quem-somos">
                     			<i class="fas fa-chevron-right"></i>Quem Somos  				
                     		</a>
                     		<a href="<?=URL_BASE?>donate">
@@ -68,7 +68,7 @@
                     		</div>
                     		<div class="info">
                     			<h4>E-mail</h4>
-                    			<a href="#">mrcez4rr@gmail.com</a>
+                    			<a href="mailto:institutoifax@gmail.com">institutoifax@gmail.com</a>
                     		</div>
                     	</div>
                     </div>

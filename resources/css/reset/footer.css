@@ -80,7 +80,7 @@ footer .principal .conteudo .logo .redes-sociais  a i
 	transition: .4s;
 }
 footer .principal .conteudo .logo .redes-sociais  a:hover i{
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
 footer .principal .conteudo .menu .titulo,
 footer .principal .conteudo .contatos .titulo
@@ -102,6 +102,10 @@ footer .principal .conteudo .menu nav
 footer .principal .conteudo .menu nav a
 {
 	margin-bottom: 28px;
+	transition: .4s;
+}
+footer .principal .conteudo .menu nav a:hover{
+	transform: scale(1.1);
 }
 footer .principal .conteudo .contatos
 {
@@ -116,6 +120,10 @@ footer .principal .conteudo .contatos .item
 	align-items: flex-start;
 	flex-wrap: wrap;
 	margin-bottom: 45px;
+	transition: .4s;
+}
+footer .principal .conteudo .contatos .item:hover{
+	transform: scale(1.1);
 }
 footer .principal .conteudo .menu nav a:last-child,
 footer .principal .conteudo .contatos .item:last-child

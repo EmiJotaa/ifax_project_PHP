@@ -30,7 +30,7 @@
 						<p>
 						Realizamos diagnósticos e reparos, sempre com as melhores marcas. Personalizamos nossas soluções para atender às necessidades únicas de cada cliente.</p>
 				</div>
-				<a href="" class="btn">Continue lendo</a>
+				<a href="<?=URL_BASE?>quem-somos" class="btn">Continue lendo</a>
 			</div>
 			<div class="video">
 				<a href="https://www.instagram.com/reel/C-Yj2J7Smy7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
