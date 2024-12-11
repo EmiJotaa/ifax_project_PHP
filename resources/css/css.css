@@ -11,6 +11,7 @@
 @import 'blocos/call_to_action.css';
 @import 'blocos/videos.css';
 @import 'blocos/contatos.css';
+@import 'blocos/donate.css';
 
 /*FOOTER*/
 @import 'reset/footer.css';
