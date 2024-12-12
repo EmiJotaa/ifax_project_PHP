@@ -3,13 +3,11 @@
     display: block;
     padding: 80px;
     text-align: center;
-    border-radius: 10px;
     margin: 0 auto;
     background-image: url('../../imagens/brigadista.png');
     background-position: top;
 	background-size: cover;
-	background-attachment: fixed;
-	
+	background-attachment: fixed;	
 }
 .donate .container {
     display: flex;
@@ -59,7 +57,6 @@
 }
 @media only	screen	and	(min-width: 1160px){
 	.donate{
-		margin-top: -55px;
 		position: relative;
 		padding: 130px 0px 100px 0px;
 	}

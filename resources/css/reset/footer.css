@@ -158,8 +158,8 @@ footer .copyright
 {
 	width: 100%;
 	display: block;
-	padding: 15px 0;
-	border-top: 5px dashed var(--color-destaque);
+	padding: 10px 0;
+	border-top: 3px solid #5B360D;
 }
 footer .copyright .conteudo
 {	

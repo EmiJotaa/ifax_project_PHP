@@ -35,11 +35,11 @@ final class HomeController
     ) {
         $data['informacoes'] = array(
             'titleHeader' => 'Quem Somos - Instituto da família do Alto Xingu',
-            'title' => 'Instituto da família do Alto Xingu',
+            'title' => 'Quem Somos - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'quem-somos',
-                    'nome' => 'Instituto da família do Alto Xingu'
+                    'nome' => '- Quem Somos'
                 ]
             )
         );
@@ -53,12 +53,12 @@ final class HomeController
         $args
     ) {
         $data['informacoes'] = array(
-            'titleHeader' => 'Faça uma doação - Instituto ',
-            'title' => 'Faça uma doação',
+            'titleHeader' => 'Faça uma doação - Instituto da família do Alto Xingu',
+            'title' => 'Faça uma doação - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'donate',
-                    'nome' => 'Faça uma doação'
+                    'nome' => '- Faça uma doação'
                 ]
             )
         );
@@ -66,4 +66,41 @@ final class HomeController
         return $renderer->render($response, "donate.php", $data);
     }
 
+    public function videos(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $data['informacoes'] = array(
+            'titleHeader' => 'Videos - Instituto da família do Alto Xingu ',
+            'title' => 'Videos - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'videos',
+                    'nome' => '- Videos'
+                ]
+            )
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "videos.php", $data);
+    }
+
+    public function fale_conosco(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $data['informacoes'] = array(
+            'titleHeader' => 'Fale Conosco - Instituto da família do Alto Xingu',
+            'title' => 'Fale Conosco - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'fale-conosco',
+                    'nome' => '- Fale Conosco'
+                ]
+            )
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "fale_conosco.php", $data);
+    }
 }

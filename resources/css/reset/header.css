@@ -70,7 +70,7 @@ header .conteudo .topo .contatos a
 	transition: .4s;
 }
 header .conteudo .topo .contatos a:hover{
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 header .conteudo .topo .contatos a i
 {
@@ -123,16 +123,14 @@ header .conteudo .menu nav a{
 	font-family: var(--font-family-swis);
 	transition: .4s;
 	font-size: 30px;
+	padding: 10px;
 }
 
 header .conteudo .menu nav a:hover{
 	background-color: rgba(91,54,13,0.80);;
 	opacity: 0.4;
 	color: var(--color-white);
-	border: 1px solid #5B360D;
-	padding: 10px;
 	border-radius: 50px;
-	transform: scale(1.1);
 }
 header .conteudo .menu a i{
 	font-size: 40px;
