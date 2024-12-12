@@ -2,8 +2,8 @@
 <section class="donate">
 	<div class="container">
 		<div class="conteudo">
-			<h2>Doar via PayPal para</h2> 
-			<h2>Instituto da família do Alto Xingu</h2>
+			<h1>Doar via PayPal para</h1> 
+			<h1>Instituto da família do Alto Xingu</h1>
 			<p>Fortalecimento do brigadista Indígena</p>
 			<div class="qrcode">
 				<img src="<?=URL_BASE?>resources/imagens/qrcode.jpg">

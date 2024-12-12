@@ -45,7 +45,7 @@ footer, header, hgroup, menu, nav, section {
 	--color-black: #000;
 	--color-destaque: #DAC88C;
 	--font-family: 'swis-font';
-	--font-family-perisphere: 'Perisphere'
+	--font-family-perisphere: 'Perisphere';
 }
 body {
 	line-height: 1.3;
@@ -157,9 +157,10 @@ table {
 {
 	transform: scale(1.1);
 	background-color: var(--color-destaque);
-	-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
+	-moz-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
+	box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
+	border: 3px solid rgba(91,54,13,1);
 }
 @media only screen and (min-width: 1024px)
 {

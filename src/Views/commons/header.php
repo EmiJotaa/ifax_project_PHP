@@ -63,7 +63,9 @@
                 </div>
                 <div class="menu">
                     <nav>
-                        <a href="<?=URL_BASE?>">Home</a>
+                        <a href="<?=URL_BASE?>">
+                            <h1>Home</h1>
+                        </a>
                         <a href="<?=URL_BASE?>quem-somos">Quem somos</a>
                         <a href="<?=URL_BASE?>donate">Faça uma doação</a>
                         <a href="<?=URL_BASE?>">Videos</a>

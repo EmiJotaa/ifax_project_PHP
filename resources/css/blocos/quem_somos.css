@@ -2,7 +2,9 @@
 {
 	padding: 40px 0 80px 0;
 	display: block;
-	background-color: var(--color-white);
+	background-image: url('../../imagens/flores.jpg');
+	background-position: center;
+	background-size: cover;
 }
 .quem_somos .conteudo
 {
@@ -41,6 +43,7 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
+	padding: 40px;
 	align-items: center;
 	height: auto;
 	overflow: hidden;
@@ -49,14 +52,12 @@
 {
 	width: 100%;
   	display: block;
-  	border-radius: 9px;
+  	border-radius: 20px;
   	transition: .4s;
-}
-.quem_somos .conteudo .video a:hover img{
-	-webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.75);
-	transform: scale(1.1);
+  	-webkit-box-shadow: 0px 0px 21px 12px rgba(91,54,13,1);
+	-moz-box-shadow: 0px 0px 21px 12px rgba(91,54,13,1);
+	box-shadow: 0px 0px 21px 12px rgba(91,54,13,1);
+	border: 2px solid rgba(91,54,13,1);
 }
 .quem_somos .conteudo .video a p
 {
@@ -74,8 +75,8 @@
 {
 	padding: 30px;
 	font-size: 40px;
-	color: var(--color-destaque);
-	background-color: var(--color-white);
+	color: #fff;
+	background-color: transparent;
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
@@ -84,12 +85,16 @@
 	align-items: center;
 	position: absolute;
 	transition: .4s;
+	border: 2px solid  rgba(91,54,13,1);
 }
 .quem_somos .conteudo .video a:hover i{
-	-webkit-box-shadow: 10px 10px 68px 29px rgba(218,200,140,1);
-	-moz-box-shadow: 10px 10px 68px 29px rgba(218,200,140,1);
-	box-shadow: 10px 10px 68px 29px rgba(218,200,140,1);
+	color: rgba(255, 0, 0, 0.7);
+	background-color: rgba(255, 255, 255, 0.4);
+	-webkit-box-shadow: 0px 0px 20px 5px  #fff;
+	-moz-box-shadow: 0px 0px 20px 5px  #fff;
+	box-shadow: 0px 0px 20px 5px  #fff;
 	transform: scale(1.1);
+	border: 2px solid  #fff;
 }
 @media only screen and (min-width: 1024px)
 {
