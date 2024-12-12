@@ -27,6 +27,7 @@
     <title>Instituto da família do Alto Xingu</title>
 
     <link href="<?=URL_BASE?>resources/css/slick.css?" rel="stylesheet"/>
+    <link href="<?=URL_BASE?>resources/css/swipebox.css?" rel="stylesheet"/>
     <link href="<?=URL_BASE?>resources/css/slick-theme.css?" rel="stylesheet"/>
     <link href="<?=URL_BASE?>resources/css/css.css?v=<?=time()?>" rel="stylesheet"/>
 <body>
@@ -68,6 +69,7 @@
                         </a>
                         <a href="<?=URL_BASE?>quem-somos">Quem somos</a>
                         <a href="<?=URL_BASE?>donate">Faça uma doação</a>
+                        <a href="<?=URL_BASE?>projetos">Projetos</a>
                         <a href="<?=URL_BASE?>videos">Videos</a>
                         <a href="<?=URL_BASE?>fale-conosco">Fale Conosco</a>
                     </nav>

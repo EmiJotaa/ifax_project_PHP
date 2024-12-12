@@ -43,4 +43,7 @@ $(document).ready(function(){
 	    }
 	  ]
 	});
+
+	$('.swipebox').swipebox();
+	$('.swipebox-video').swipebox();
 });

@@ -66,6 +66,25 @@ final class HomeController
         return $renderer->render($response, "donate.php", $data);
     }
 
+    public function projetos(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $data['informacoes'] = array(
+            'titleHeader' => 'Projetos - Instituto da família do Alto Xingu',
+            'title' => 'Projetos - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'projetos',
+                    'nome' => '- Projetos'
+                ]
+            )
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "projetos.php", $data);
+    }
+
     public function videos(
         ServerRequestInterface $request, 
         ResponseInterface $response,
