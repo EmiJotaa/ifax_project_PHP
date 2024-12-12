@@ -120,7 +120,7 @@ header .conteudo .menu.active nav
 }
 header .conteudo .menu nav a{
 	padding: 13px 0px;
-	font-family: var(--font-family-swis);
+	font-family: var(--font-family);
 	transition: .4s;
 	font-size: 30px;
 	padding: 10px;
@@ -129,8 +129,7 @@ header .conteudo .menu nav a{
 
 header .conteudo .menu nav a:hover{
 	background-color: rgba(91,54,13,0.80);;
-	opacity: 0.4;
-	color: var(--color-white);
+	color: var(--color-destaque);
 }
 header .conteudo .menu a i{
 	font-size: 40px;
@@ -161,7 +160,7 @@ header .conteudo .menu.active .btn-nav
 	}
 	header .conteudo .topo .redes-sociais  a i
 	{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	header .conteudo .topo .contatos
 	{
@@ -170,6 +169,7 @@ header .conteudo .menu.active .btn-nav
 	}
 	header .conteudo .topo .contatos a
 	{
+		font-size: 15px;
 		margin: 0 35px 0 0;
 	}
 	header .conteudo .topo .contatos a:last-child
@@ -195,7 +195,7 @@ header .conteudo .menu.active .btn-nav
 	}
 	header .conteudo .menu nav
 	{
-		max-width: 1000px;
+		max-width: 1160px;
 		height: auto;
 		justify-content: space-between;
 		align-items: center;
@@ -209,7 +209,7 @@ header .conteudo .menu.active .btn-nav
 
 	}
 	header .conteudo .menu nav a{
-		font-size: 23px;
+		font-size: 20px;
 	}
 	header .conteudo .menu a.btn-nav
 	{

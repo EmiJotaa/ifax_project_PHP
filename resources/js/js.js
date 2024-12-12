@@ -46,4 +46,12 @@ $(document).ready(function(){
 
 	$('.swipebox').swipebox();
 	$('.swipebox-video').swipebox();
+
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6Lc88pkqAAAAADxgwUiMVwRzYn5rt0ttgtoF1TTw', {action: 'submit'}).then(function(token) {
+          });
+        });
+      }
 });

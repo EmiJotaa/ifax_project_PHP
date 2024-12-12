@@ -45,7 +45,7 @@
 		</div>
 	</div>
 </section>
-<section class="contador">
+<!-- <section class="contador">
 	<div class="container">
 		<div class="conteudo">
 			<div class="item">
@@ -77,7 +77,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <?=$this->fetch('commons/call_to_action.php', $data)?>
 <?=$this->fetch('commons/contatos.php', $data)?>
 

@@ -6,15 +6,15 @@
 						<a href="<?=URL_BASE?>">
                         	<img src="<?=URL_BASE?>resources/imagens/logo.png">
                     	</a>
-                    	<p class="descricao">Somos uma instituição da familia do alto Xingu.</p>
+                    	<p class="descricao">Desde 2020, a IFAX atua no apoio de formação dos brigadistas indígenas e na conscientização das aldeias xinguanas quanto ao manejo do fogo e prevenção de incêndios.</p>
                     	<div class="redes-sociais">
-                        	<a href="#">
+                        	<a href="https://www.facebook.com/ProducoesFilmesTakuma" target="_blank">
                             	<i class="fab fa-facebook-f"></i>
                        	    </a>
-                       		<a href="#">
+                       		<a href="https://www.instagram.com/instituto_ifax?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                             	<i class="fab fa-instagram"></i>
                         	</a>
-                        	<a href="#">
+                        	<a href="https://www.youtube.com/@tvxingu" target="_blank">
                             	<i class="fab fa-youtube"></i>
                         	</a>
                     	</div>
@@ -22,7 +22,7 @@
                     <div class="menu">
                     	<h3 class="titulo">Institucional</h3>
                     	<nav>
-                    		<a href="#">
+                    		<a href="<?=URL_BASE?>">
                     			<i class="fas fa-chevron-right"></i>Home               				
                     		</a>
                     		<a href="<?=URL_BASE?>quem-somos">
@@ -51,7 +51,7 @@
                     		</div>
                     		<div class="info">
                     			<h4>Endereço</h4>
-                    			<a href="#">SCLRN BLOCO E LOTE 14 LOJA 1</a>
+                    			<a href="https://maps.app.goo.gl/wDYwuHmSL91JwTPg9" target="_blank">Canarana - MT 78640-000</a>
                     		</div>
                     	</div>
                     	<div class="item">
@@ -59,8 +59,17 @@
                     			<i class="fas fa-mobile-screen"></i>
                     		</div>
                     		<div class="info">
-                    			<h4>Telefone</h4>
-                    			<a href="#">+55 (61) 98142-2758</a>
+                    			<h4>Telefone:</h4>
+                    			<a href="tel:+5566992589927">+55 (66) 99258-9927</a>
+                    		</div>
+                    	</div>
+                    	<div class="item">
+                    		<div class="icone">
+                    			<i class="fas fa-mobile-screen"></i>
+                    		</div>
+                    		<div class="info">
+                    			<h4>Telefone:</h4>
+                    			<a href="tel:+55669981492520">+55 (66) 998149-2520</a>
                     		</div>
                     	</div>
                     	<div class="item">
@@ -80,7 +89,7 @@
 			<div class="container">
 				<div class="conteudo">
 					<p>Todos direitos reservados © 2024</p>
-					<p>Desenvolvido por Marquin.Do.Som<a href="#"><i class="fab fa-instagram"></i></a></p>
+					<p>Desenvolvido por <a href="https://www.instagram.com/marquin.do.som/" target="_blank">Marquin.Do.Som<a href="https://www.instagram.com/marquin.do.som/" target="_blank"><i class="fab fa-instagram"></i></a></p>
 				</div>
 			</div>
 		</div>
@@ -88,6 +97,7 @@
     <script src="<?=URL_BASE?>resources/js/jquery/jquery.min.js"></script>
     <script src="<?=URL_BASE?>resources/js/slick.min.js"></script>
     <script src="<?=URL_BASE?>resources/js/jquery.swipebox.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc88pkqAAAAADxgwUiMVwRzYn5rt0ttgtoF1TTw"></script>
 	<script src="<?=URL_BASE?>resources/js/js.js"></script>
 </body>
 </html>

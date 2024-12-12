@@ -26,25 +26,11 @@ footer, header, hgroup, menu, nav, section {
 *,*:after,*:before{
 	box-sizing: border-box;
 }
-@font-face {
-    font-family: 'swis-font';
-    src: url('../../fonts/swis721/Swiss721BT-Roman.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Perisphere';
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    src: url('../../fonts/perisphere/Perisphere.woff2') format('woff2');
-}
 :root{
 	--color-white: #fff;
 	--color-black: #000;
 	--color-destaque: #DAC88C;
-	--font-family: 'swis-font';
+	--font-family: 'Swis721 BT';
 	--font-family-perisphere: 'Perisphere';
 }
 body {
@@ -52,13 +38,13 @@ body {
 	background: var(--color-white);
 	color: #5B360D;
 	font-family: var(--font-family-perisphere);
-	font-size: 17px;
+	font-size: 20px;
 	letter-spacing: 3px;
 }
 a{
 	color: #5B360D;
-	font-family: var(--font-family-perisphere);
-	font-size: 23px;
+	font-family: var(--font-family);
+	font-size: 20px;
 	line-height: 1.3;
 	text-decoration: none;
 }	
@@ -131,6 +117,7 @@ table {
 }
 .descricao p
 {
+	font-family: var(--font-family);
 	margin-bottom: 35px;
 }
 .descricao p:last-child

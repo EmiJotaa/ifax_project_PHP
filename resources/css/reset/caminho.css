@@ -9,6 +9,7 @@
 	background-position-y: bottom;
 	border-bottom: 3px solid #5B360D;
 	position: relative;
+	border-top: 3px solid #5B360D;
 }
 .caminho:before
 {
@@ -22,7 +23,8 @@
 	background-image: url('../../imagens/flores4.png');
 	background-position: bottom;
 	background-size: cover;
-	border-top: 3px solid #5B360D;
+	opacity: 0.3;
+
 }
 .caminho .container
 {
@@ -87,6 +89,7 @@
 }
 .caminho .conteudo ul li a
 {
+	font-family: var(--font-family-perisphere);
 	transition: var(--transition-time);
 }
 .caminho .conteudo ul li a:hover
@@ -101,7 +104,7 @@
 {
 	.caminho
 	{
-		margin-top: -53px;
+		margin-top: -50px;
 	}
 	.caminho .conteudo h1
 	{

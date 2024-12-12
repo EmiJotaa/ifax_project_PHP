@@ -36,20 +36,20 @@
             <div class="conteudo">
                 <div class="topo">
                     <div class="redes-sociais">
-                        <a href="https://www.facebook.com/ProducoesFilmesTakuma">
+                        <a href="https://www.facebook.com/ProducoesFilmesTakuma" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.instagram.com/instituto_ifax?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        <a href="https://www.instagram.com/instituto_ifax?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#">
+                        <a href="https://www.youtube.com/@tvxingu" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
                     <div class="contatos">
-                        <a href="tel:61981422758">
+                        <a href="tel:+5566992589927">
                             <i class="fas fa-mobile-screen-button"></i>
-                            (61)98142-2758
+                            +55 (66) 99258-9927
                         </a>
                         <a href="mailto:institutoifax@gmail.com">
                             <i class="far fa-envelope"></i>
@@ -64,11 +64,9 @@
                 </div>
                 <div class="menu">
                     <nav>
-                        <a href="<?=URL_BASE?>">
-                            <h1>Home</h1>
-                        </a>
-                        <a href="<?=URL_BASE?>quem-somos">Quem somos</a>
-                        <a href="<?=URL_BASE?>donate">Faça uma doação</a>
+                        <a href="<?=URL_BASE?>">Home</a>
+                        <a href="<?=URL_BASE?>quem-somos">Quem Somos</a>
+                        <a href="<?=URL_BASE?>donate">Faça uma Doação</a>
                         <a href="<?=URL_BASE?>projetos">Projetos</a>
                         <a href="<?=URL_BASE?>videos">Videos</a>
                         <a href="<?=URL_BASE?>fale-conosco">Fale Conosco</a>
