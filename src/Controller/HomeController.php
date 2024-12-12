@@ -44,7 +44,7 @@ final class HomeController
             )
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
-        return $renderer->render($response, "quem_somos.php", $data);
+        return $renderer->render($response, "quem_somos2.php", $data);
     }
 
     public function donate(

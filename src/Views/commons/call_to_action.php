@@ -4,8 +4,8 @@
 	</video>
 	<div class="container">
 		<div class="conteudo">
-			<h1>Somos uma instituição da família do xingu</h1>
-			<a href="<?=URL_BASE?>donate" class="btn">Fazer Doação</a>
+			<h1>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</h1>
+			<a href="<?=URL_BASE?>donate" class="btn">Fazer uma Doação</a>
 		</div>
 	</div>
 </section>

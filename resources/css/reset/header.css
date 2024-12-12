@@ -124,13 +124,13 @@ header .conteudo .menu nav a{
 	transition: .4s;
 	font-size: 30px;
 	padding: 10px;
+	border-radius: 50px;
 }
 
 header .conteudo .menu nav a:hover{
 	background-color: rgba(91,54,13,0.80);;
 	opacity: 0.4;
 	color: var(--color-white);
-	border-radius: 50px;
 }
 header .conteudo .menu a i{
 	font-size: 40px;

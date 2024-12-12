@@ -31,10 +31,13 @@
                     		<a href="<?=URL_BASE?>donate">
                     			<i class="fas fa-chevron-right"></i>Fazer uma Doação     			
                     		</a>
-                    		<a href="#">
+                    		<a href="<?=URL_BASE?>projetos">
+                    			<i class="fas fa-chevron-right"></i>Projetos     			
+                    		</a>
+                    		<a href="<?=URL_BASE?>videos">
                     			<i class="fas fa-chevron-right"></i>Videos          				
                     		</a>
-                    		<a href="#">
+                    		<a href="<?=URL_BASE?>fale-conosco">
                     			<i class="fas fa-chevron-right"></i>Fale Conosco	
                     		</a>
                     		

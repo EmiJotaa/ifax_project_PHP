@@ -55,9 +55,3 @@
 .donate .btn-donate input[type="image"]:hover {
     transform: scale(1.05);
 }
-@media only	screen	and	(min-width: 1160px){
-	.donate{
-		position: relative;
-		padding: 130px 0px 100px 0px;
-	}
-}
