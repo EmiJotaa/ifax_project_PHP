@@ -60,6 +60,7 @@ footer .principal .conteudo .logo p
 	margin: 30px 0;
 	text-align: center;
 	font-family: var(--font-family);
+	font-size: 20px;
 }
 footer .principal .conteudo .logo .redes-sociais
 {
@@ -86,7 +87,7 @@ footer .principal .conteudo .logo .redes-sociais  a:hover i{
 footer .principal .conteudo .menu .titulo,
 footer .principal .conteudo .contatos .titulo
 {
-	font-size: 40px;
+	font-size: 55px;
 	margin-bottom: 35px;
 	align-items: center;
 	justify-content: center;
@@ -115,6 +116,7 @@ footer .principal .conteudo .contatos
 }
 footer .principal .conteudo .contatos .item
 {
+	font-size: 20px;
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
