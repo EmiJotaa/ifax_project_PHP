@@ -17,7 +17,7 @@
 						<div class="informacoes">
 							<p class="data">22/08/2024</p>						
 							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
+							<p class="btn">Ver Projeto</p>
 						</div>
 					</a>
 				</div>
@@ -29,7 +29,7 @@
 						<div class="informacoes">
 							<p class="data">22/08/2024</p>						
 							<h3 class="titulo">Aqui vem o titulo </h3>
-							<p class="btn">Ver notícia</p>
+							<p class="btn">Ver Projeto</p>
 						</div>
 					</a>
 				</div>
@@ -41,7 +41,7 @@
 						<div class="informacoes">
 							<p class="data">22/08/2024</p>						
 							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
+							<p class="btn">Ver Projeto</p>
 						</div>
 					</a>
 				</div>
@@ -53,7 +53,7 @@
 						<div class="informacoes">
 							<p class="data">22/08/2024</p>						
 							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
+							<p class="btn">Ver Projeto</p>
 						</div>
 					</a>
 				</div>
@@ -65,7 +65,7 @@
 						<div class="informacoes">
 							<p class="data">22/08/2024</p>						
 							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
+							<p class="btn">Ver Projeto</p>
 						</div>
 					</a>
 				</div>
@@ -77,7 +77,7 @@
 						<div class="informacoes">
 							<p class="data">22/08/2024</p>						
 							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
+							<p class="btn">Ver Projeto</p>
 						</div>
 					</a>
 				</div>
@@ -89,7 +89,7 @@
 						<div class="informacoes">
 							<p class="data">22/08/2024</p>						
 							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
+							<p class="btn">Ver Projeto</p>
 						</div>
 					</a>
 				</div>				

@@ -60,6 +60,7 @@
 	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 	border: 2px solid #5B360D;
+	transition: .4s;
 }
 .quem_somos .conteudo .video a:hover img{
 	-webkit-box-shadow: 0px 0px 11px 9pxrgba(36, 139, 13, 0.9);
