@@ -5,7 +5,6 @@
 	padding: 80px 0px;
 	border-top: 50px solid transparent;
     border-image: url('../../imagens/pintura.png') 25 round;
-    text-align: center;
 }
 .fale-conosco .conteudo
 {
@@ -38,9 +37,9 @@
 	padding: 25px 25px 0px 25px;
 	background-color: rgba(167, 243, 78, 0.4);
 	border-radius: 20px;
-	-webkit-box-shadow: 0px 0px 15px 7px rgba(167,243,78,0.7);
-	-moz-box-shadow: 0px 0px 15px 7px rgba(167,243,78,0.7);
-	box-shadow: 0px 0px 15px 7px rgba(167,243,78,0.7);
+	-webkit-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 }
 .fale-conosco .conteudo .form form
 {

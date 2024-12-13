@@ -10,12 +10,15 @@
 @import 'blocos/slider_banner.css';
 @import 'blocos/quem_somos.css';
 @import 'blocos/quem_somos2.css';
-@import 'blocos/contador.css';
+@import 'blocos/call_to_action.css';
+@import 'blocos/noticias.css';
+@import 'blocos/donate.css';
+@import 'blocos/projetos.css';
 @import 'blocos/videos.css';
 @import 'blocos/fotos.css';
 @import 'blocos/fale_conosco.css';
-@import 'blocos/donate.css';
-@import 'blocos/call_to_action.css';
+
+
 
 /*FOOTER*/
 @import 'reset/footer.css';

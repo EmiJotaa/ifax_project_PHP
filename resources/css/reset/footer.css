@@ -196,6 +196,7 @@ footer .copyright .conteudo p
 	}
 	footer .principal .conteudo .menu .titulo,
 	footer .principal .conteudo .contatos .titulo{
+		font-size: 40px;
 		align-items: flex-start;
 		justify-content: flex-start;
 	}
@@ -240,6 +241,10 @@ footer .copyright .conteudo p
 		margin: 0;
 		max-height: 180px;
 		padding-top: 0px;
+	}
+	footer .principal .conteudo .menu .titulo,
+	footer .principal .conteudo .contatos .titulo{
+		font-size: 55px;
 	}
 	footer .principal .conteudo .logo p
 	{

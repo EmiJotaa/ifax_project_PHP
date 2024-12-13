@@ -1,5 +1,6 @@
 <?=$this->fetch('commons/header.php', $data)?>
 <?=$this->fetch('commons/caminho.php', $data)?>
+
 <section class="quem_somos_2">
 	<div class="container">
 		<div class="conteudo">
@@ -45,39 +46,6 @@
 		</div>
 	</div>
 </section>
-<!-- <section class="contador">
-	<div class="container">
-		<div class="conteudo">
-			<div class="item">
-				<div class="topo">
-					<i class="fas fa-home"></i>
-					<p class="counter">1245</p>
-				</div>
-				<div class="descricao">
-					<p>Serviços Realizados</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="topo">
-					<i class="fas fa-thumbs-up"></i>
-					<p class="counter">1245</p>
-				</div>
-				<div class="descricao">
-					<p>Clientes Felizes</p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="topo">
-					<i class="fas fa-users"></i>
-					<p class="counter">1245</p>
-				</div>
-				<div class="descricao">
-					<p>Projetos Completos</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
 <?=$this->fetch('commons/call_to_action.php', $data)?>
 <?=$this->fetch('commons/fale_conosco.php', $data)?>
 

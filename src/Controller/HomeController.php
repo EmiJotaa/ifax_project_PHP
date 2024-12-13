@@ -47,6 +47,25 @@ final class HomeController
         return $renderer->render($response, "quem_somos2.php", $data);
     }
 
+    public function noticias(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $data['informacoes'] = array(
+            'titleHeader' => 'Notícias - Instituto da família do Alto Xingu',
+            'title' => 'Notícias - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'noticias',
+                    'nome' => '- Notícias'
+                ]
+            )
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "noticias.php", $data);
+    }
+
     public function donate(
         ServerRequestInterface $request, 
         ResponseInterface $response,
@@ -85,42 +104,23 @@ final class HomeController
         return $renderer->render($response, "projetos.php", $data);
     }
 
-    public function videos(
+    public function galeria(
         ServerRequestInterface $request, 
         ResponseInterface $response,
         $args
     ) {
         $data['informacoes'] = array(
-            'titleHeader' => 'Videos - Instituto da família do Alto Xingu ',
-            'title' => 'Videos - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Galeria - Instituto da família do Alto Xingu ',
+            'title' => 'Galeria - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
-                    'link' => 'videos',
-                    'nome' => '- Videos'
+                    'link' => 'galeria',
+                    'nome' => '- Galeria'
                 ]
             )
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
-        return $renderer->render($response, "videos.php", $data);
-    }
-
-    public function fotos(
-        ServerRequestInterface $request, 
-        ResponseInterface $response,
-        $args
-    ) {
-        $data['informacoes'] = array(
-            'titleHeader' => 'Fotos - Instituto da família do Alto Xingu ',
-            'title' => 'Fotos - Instituto da família do Alto Xingu',
-            'caminho' => array(
-                [
-                    'link' => 'fotos',
-                    'nome' => '- Fotos'
-                ]
-            )
-        );
-        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
-        return $renderer->render($response, "fotos.php", $data);
+        return $renderer->render($response, "galeria.php", $data);
     }
 
     public function fale_conosco(

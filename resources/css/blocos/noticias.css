@@ -1,0 +1,106 @@
+.noticias
+{
+	width: 100%;
+	display: block;
+	padding: 40px 0px 80px 0px;
+	background-image: url('../../imagens/flores.jpg');
+	background-position: left;
+	background-size: cover;
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
+}
+.noticias .container
+{
+	max-width: 1490px;
+}
+.noticias .conteudo .texto .descicao
+{
+	max-width: 690px;
+	display: block;
+	margin: 0 auto 25px;
+}
+.noticias .conteudo .itens
+{
+	width: 100%;
+}
+.noticias .conteudo .itens .item {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+.noticias .conteudo .itens .item a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   	padding: 20px;
+}
+.noticias .conteudo .itens .item a .img {
+    flex: 0 0 auto;    
+}
+
+.noticias .conteudo .itens .item a .img img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 3px solid #5B360D;
+    aspect-ratio: 1;
+    object-fit: cover;
+	-webkit-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+}
+
+.noticias .conteudo .itens .item a .informacoes {
+    flex: 1; 
+    background-color: #5B360D;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+    border-radius: 10px;
+    border: 3px solid var(--color-destaque);
+}
+.noticias .conteudo .itens .item a .informacoes .data
+{
+	position: absolute;
+	right: 0;
+	top: -30px;
+	line-height: 30px;
+	width: max-content;
+	padding: 0 10px;
+	background-color: var(--color-destaque);
+}
+.noticias .conteudo .itens .item a .informacoes .titulo
+{
+	font-size: 18px;
+	line-height: 22px;
+	font-family: var(--font-family);
+	margin-bottom: 25px;
+	color: var(--color-white);
+}
+.noticias .conteudo .itens .item a .informacoes .titulo:after
+{
+	background-color: var(--color-destaque);
+	bottom: -5px;
+}
+.noticias .conteudo .itens .item a .informacoes .descricao
+{
+	margin-bottom: 25px;
+}
+.noticias .conteudo .itens .item a .informacoes .btn
+{
+	font-size: 20px;
+	color: var(--color-destaque);
+	text-decoration: underline;
+	font-family: var(--font-family);
+	padding: 0px;
+	background-color: transparent;
+	margin: 0;
+	border: 0px;
+	text-transform: initial;
+}
+.noticias .conteudo .itens .item a:hover .informacoes .btn{
+	color: rgba(79, 255, 40, 1);
+	transform: scale(1.1);
+}

@@ -28,14 +28,17 @@
                     		<a href="<?=URL_BASE?>quem-somos">
                     			<i class="fas fa-chevron-right"></i>Quem Somos  				
                     		</a>
+                    		<a href="<?=URL_BASE?>noticias">
+                    			<i class="fas fa-chevron-right"></i>Notícias  				
+                    		</a>
                     		<a href="<?=URL_BASE?>donate">
                     			<i class="fas fa-chevron-right"></i>Fazer uma Doação     			
                     		</a>
                     		<a href="<?=URL_BASE?>projetos">
                     			<i class="fas fa-chevron-right"></i>Projetos     			
                     		</a>
-                    		<a href="<?=URL_BASE?>videos">
-                    			<i class="fas fa-chevron-right"></i>Videos          				
+                    		<a href="<?=URL_BASE?>galeria">
+                    			<i class="fas fa-chevron-right"></i>Galeria          				
                     		</a>
                     		<a href="<?=URL_BASE?>fale-conosco">
                     			<i class="fas fa-chevron-right"></i>Fale Conosco	

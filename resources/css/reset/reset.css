@@ -204,6 +204,7 @@ input,select
 	border: 0;
 	outline: none;
 	border-radius: 50px;
+	border: 2px solid #5B360D;
 }
 .form form .campo > label
 {
@@ -252,6 +253,7 @@ textarea
 	border: 0;
 	outline: none;
 	border-radius: 20px;
+	border: 2px solid #5B360D;
 }
 .form .btn
 {
