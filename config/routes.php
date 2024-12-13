@@ -1,6 +1,14 @@
 <?php
 use Slim\App;
 return function (App $app) {
+    //ROTAS DO PAINEL ADMINISTRATIVO
+    $app->get('/admin', '\App\Controller\AdminController:index');
+    $app->get('/login', '\App\Controller\AdminController:login');
+    $app->get('/logout', '\App\Controller\AdminController:logout');
+
+    $app->post('/login', '\App\Controller\AdminController:verifica_login');
+
+
 
     //ROTAS DO WEB SITE
     $app->get('/', '\App\Controller\HomeController:home');
