@@ -8,6 +8,8 @@
     background-position: top;
 	background-size: cover;
 	background-attachment: fixed;	
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
 }
 .donate .container {
     display: flex;

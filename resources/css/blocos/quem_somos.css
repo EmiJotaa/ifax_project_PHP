@@ -5,6 +5,8 @@
 	background-image: url('../../imagens/flores.jpg');
 	background-position: center;
 	background-size: cover;
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
 }
 .quem_somos .conteudo
 {

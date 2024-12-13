@@ -36,6 +36,13 @@
 						</div>
 					</a>
 				</div>
+				<div class="item">
+					<a href="<?=URL_BASE?>resources/imagens/teste.png" class="swipebox" title="Imagem Fotos">
+						<div class="img">
+							<img src="<?=URL_BASE?>resources/imagens/teste.png">
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>

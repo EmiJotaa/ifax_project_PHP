@@ -6,6 +6,8 @@ footer
 	background-position: bottom;
 	background-size: cover;
 	padding-top: 30px;
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
 }
 footer .principal
 {

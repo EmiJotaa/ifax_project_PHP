@@ -3,6 +3,8 @@
 	width: 100%;
 	display: block;
 	padding: 40px 0 60px 0;
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
 }
 .quem_somos_2 .conteudo
 {

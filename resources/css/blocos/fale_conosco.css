@@ -3,6 +3,9 @@
 	width: 100%;
 	display: block;
 	padding: 80px 0px;
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
+    text-align: center;
 }
 .fale-conosco .conteudo
 {

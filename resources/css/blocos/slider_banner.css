@@ -1,4 +1,7 @@
-.slider_banner,
+.slider_banner{
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
+}
 .slider_banner .conteudo,
 .slider_banner .conteudo .itens,
 .slider_banner .conteudo .itens .item a,
