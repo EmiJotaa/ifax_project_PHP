@@ -24,9 +24,11 @@
 .call_to_action .conteudo a
 {
 	color: var(--color-white);
+	margin-bottom: -30px;
 }
 .call_to_action .conteudo a:hover{
-	color: var(--color-black);
+	color: var(--color-white);
+	background-color: rgba(36, 139, 13, 1);
 }
 .call_to_action video
 {

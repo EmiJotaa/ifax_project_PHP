@@ -1,39 +1,41 @@
-.videos
+.fotos
 {
 	width: 100%;
 	display: block;
 	padding: 40px 0px 80px 0px;
-	background-color: var(--color-white);
+	background-image: url('../../imagens/flores.jpg');
+	background-position: right;
+	background-size: cover;
 }
-.videos .container
+.fotos .container
 {
 	max-width: 1490px;
 }
-.videos .conteudo .texto .descicao
+.fotos .conteudo .texto .descicao
 {
 	max-width: 690px;
 	display: block;
 	margin: 0 auto 25px;
 }
-.videos .conteudo .itens
+.fotos .conteudo .itens
 {
 	width: 100%;
 	max-height: 400px;
 }
-.videos .conteudo .itens .item
+.fotos .conteudo .itens .item
 {
     width: 100%;
   	display: block;
   }
-.videos .conteudo .itens .item a
+.fotos .conteudo .itens .item a
 {
 	width: 100%;
 	display: block;
 }
-.videos .conteudo .itens .item a .img{
+.fotos .conteudo .itens .item a .img{
 	padding: 0px 40px;
 }
-.videos .conteudo .itens .item a .img img
+.fotos .conteudo .itens .item a .img img
 {
 	width: 100%;
   	display: block;

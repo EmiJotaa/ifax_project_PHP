@@ -66,9 +66,10 @@
                     <nav>
                         <a href="<?=URL_BASE?>">Home</a>
                         <a href="<?=URL_BASE?>quem-somos">Quem Somos</a>
-                        <a href="<?=URL_BASE?>donate">Faça uma Doação</a>
+                        <a href="<?=URL_BASE?>donate">Doação</a>
                         <a href="<?=URL_BASE?>projetos">Projetos</a>
                         <a href="<?=URL_BASE?>videos">Videos</a>
+                        <a href="<?=URL_BASE?>fotos">Fotos</a>
                         <a href="<?=URL_BASE?>fale-conosco">Fale Conosco</a>
                     </nav>
                     <a href="#" class="btn-nav">

@@ -104,6 +104,25 @@ final class HomeController
         return $renderer->render($response, "videos.php", $data);
     }
 
+    public function fotos(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $data['informacoes'] = array(
+            'titleHeader' => 'Fotos - Instituto da família do Alto Xingu ',
+            'title' => 'Fotos - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'fotos',
+                    'nome' => '- Fotos'
+                ]
+            )
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "fotos.php", $data);
+    }
+
     public function fale_conosco(
         ServerRequestInterface $request, 
         ResponseInterface $response,

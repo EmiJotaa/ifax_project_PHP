@@ -8,6 +8,7 @@ return function (App $app) {
     $app->get('/donate', '\App\Controller\HomeController:donate');
     $app->get('/projetos', '\App\Controller\HomeController:projetos');
     $app->get('/videos', '\App\Controller\HomeController:videos');
+    $app->get('/fotos', '\App\Controller\HomeController:fotos');
     $app->get('/fale-conosco', '\App\Controller\HomeController:fale_conosco');
     $app->get('/{any}', '\App\Controller\HomeController:page');
 };

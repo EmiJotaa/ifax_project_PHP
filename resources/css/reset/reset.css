@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 :root{
 	--color-white: #fff;
 	--color-black: #000;
-	--color-destaque: #DAC88C;
+	--color-destaque: rgba(36, 139, 13, 1);
 	--font-family: 'Swis721 BT';
 	--font-family-perisphere: 'Perisphere';
 }
@@ -138,7 +138,7 @@ table {
 	border: 3px solid var(--color-destaque);
 	border-radius: 50px;
 	text-transform: uppercase;
-	font-family: var(--font-family-perisphere);
+	font-family: var(--font-family);
 	display: block;
 	margin: 0 auto;
 	transition: .4s;
@@ -146,15 +146,122 @@ table {
 .btn:hover
 {
 	transform: scale(1.1);
-	background-color: var(--color-destaque);
+	background-color: rgba(36, 139, 13, 0.4);
 	-webkit-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
 	-moz-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
 	box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
-	border: 3px solid rgba(91,54,13,1);
+	border: 3px solid rgba(79, 255, 40, 1);
+	color: rgba(79, 255, 40, 1);
 }
 @media only screen and (min-width: 1024px)
 {
 	.titulo{
 		font-size: 65px;
 	}
+}
+.form h2
+{
+	width: 100%;
+	display: block;
+	font-size: 40px;
+	margin-bottom: 18px;
+	line-height: 1;
+	font-family: var(--font-family-perisphere);
+}
+.form p
+{
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	font-family: var(--font-family);
+	color: #5B360D;
+	margin-bottom: 20px;
+}
+.form form
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.form form .campo
+{
+	width: 100%;
+	margin-bottom: 20px;
+	display: block;
+}
+input,select
+{
+	width: 100%;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 15px;
+	font-size: 16px;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	border: 0;
+	outline: none;
+	border-radius: 50px;
+}
+.form form .campo > label
+{
+	width: 100%;
+	display: block;
+	font-family: var(--font-family);
+	margin-bottom: 10px;
+}
+.form form .campo .itens
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.form form .campo .itens .item
+{
+	width: 100%;
+	display: block;
+	margin-bottom: 15px;
+}
+.form form .campo .itens .item label
+{
+	width: 100%;
+	display: flex ;
+	align-items: flex-start;
+}
+.form form .campo .itens .item label input[type="checkbox"]
+{
+	width: 10%;
+	height: 10px;
+	margin-right: 5px;
+	border: 0;
+	outline: none;
+}
+textarea
+{
+	width: 100%;
+	display: block;
+	font-family: var(--font-family);
+	padding: 15px;
+	resize: none;
+	min-height: 110px;
+	max-height: 110px;
+	border: 0;
+	outline: none;
+	border-radius: 20px;
+}
+.form .btn
+{
+	background-color: transparent;
+	color: #5B360D;
+	font-size: 20px;
+	cursor: pointer;
+}
+.form .btn:hover
+{
+	border: 3px solid rgba(79, 255, 40, 1);
+	background-color: rgba(36, 139, 13, 0.4);
 }

@@ -20,6 +20,6 @@
 		</div>
 	</div>
 </section>
-<?=$this->fetch('commons/contatos.php', $data)?>
+<?=$this->fetch('commons/fale_conosco.php', $data)?>
 
 <?=$this->fetch('commons/footer.php', $data)?>

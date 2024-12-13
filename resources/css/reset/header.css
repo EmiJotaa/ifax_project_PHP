@@ -66,7 +66,7 @@ header .conteudo .topo .contatos{
 header .conteudo .topo .contatos a
 {
 	margin: 5px 0;
-	font-size: 20px;
+	font-size: 15px;
 	transition: .4s;
 }
 header .conteudo .topo .contatos a:hover{
@@ -96,10 +96,13 @@ header .conteudo .menu nav
 {
 	width: 100vw;
 	height: 100vh;
-	background-color: var(--color-destaque);
+/*	background-color: var(--color-destaque);*/
+	background-image: url('../../imagens/flores3.png');
+	background-position: right;
+	background-size: cover;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-end;
+	align-items: flex-end;
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin: 0 auto;
@@ -112,7 +115,7 @@ header .conteudo .menu nav
 	-webkit-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
 	-moz-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
 	box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
-	border: 2px solid rgba(91,54,13,1);
+	border: 3px solid rgba(91,54,13,1);
 }
 header .conteudo .menu.active nav
 {
@@ -128,8 +131,8 @@ header .conteudo .menu nav a{
 }
 
 header .conteudo .menu nav a:hover{
-	background-color: rgba(91,54,13,0.80);;
-	color: var(--color-destaque);
+	background-color: rgba(91,54,13,1);;
+	color: rgba(79, 255, 40, 1);
 }
 header .conteudo .menu a i{
 	font-size: 40px;
