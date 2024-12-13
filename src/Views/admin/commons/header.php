@@ -59,10 +59,10 @@
                         </ul>
                         <p>Conteúdo</p>
                         <ul>
-                            <li class="<?=($data['informacoes']['menuActive'] === 'produtos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-produtos"><i class="fas fa-gift"></i>Produtos</a></li>
-                            <li class="<?=($data['informacoes']['menuActive'] === 'servicos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-servicos"><i class="fas fa-wrench"></i>Serviços</a></li>
-                            <li class="<?=($data['informacoes']['menuActive'] === 'blogs') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-blogs"><i class="far fa-comments"></i>Blog's</a></li>
-                            <li class="<?=($data['informacoes']['menuActive'] === 'recomendacoes') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-recomendacoes"><i class="far fa-newspaper"></i>Recomendações</a></li>
+                            <li class="<?=($data['informacoes']['menuActive'] === 'noticias') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-noticias"><i class="far fa-newspaper"></i>Notícias</a></li>
+                            <li class="<?=($data['informacoes']['menuActive'] === 'projetos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-projetos"><i class="far fa-folder"></i>Projetos</a></li>
+                            <li class="<?=($data['informacoes']['menuActive'] === 'fotos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-fotos"><i class="far fa-image"></i>Fotos</a></li>
+                            <li class="<?=($data['informacoes']['menuActive'] === 'videos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-videos"><i class="fas fa-video"></i>Videos</a></li>
                         </ul>
                         <p>Configurações</p>
                         <ul>

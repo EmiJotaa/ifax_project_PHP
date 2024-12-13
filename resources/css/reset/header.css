@@ -112,9 +112,9 @@ header .conteudo .menu nav
 	left: -100vw;
 	transition: .30s;
 	z-index: 3;
-	-webkit-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
-	-moz-box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
-	box-shadow: 0px 10px 22px 0px rgba(91,54,13,1);
+	-webkit-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 	border: 3px solid rgba(91,54,13,1);
 }
 header .conteudo .menu.active nav

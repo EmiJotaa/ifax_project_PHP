@@ -1,43 +1,35 @@
-.videos
+.galery
 {
 	width: 100%;
 	display: block;
 	padding: 40px 0px 80px 0px;
-	background-color: var(--color-white);
 	border-top: 50px solid transparent;
     border-image: url('../../imagens/pintura.png') 25 round;
 }
-
-.videos .container
+.galery .container
 {
 	max-width: 1490px;
 }
-.videos .conteudo .texto .descicao
-{
-	max-width: 690px;
-	display: block;
-	margin: 0 auto 25px;
-}
-.videos .conteudo .itens
+.galery .conteudo .itens
 {
 	width: 100%;
 	max-height: 400px;
 }
-.videos .conteudo .itens .item
+.galery .conteudo .itens .item
 {
     width: 100%;
   	display: block;
   }
-.videos .conteudo .itens .item a
+.galery .conteudo .itens .item a
 {
 	width: 100%;
 	display: block;
 	padding: 20px;
 }
-.videos .conteudo .itens .item a .img{
+.galery .conteudo .itens .item a .img{
 	padding: 0px 40px;
 }
-.videos .conteudo .itens .item a .img img
+.galery .conteudo .itens .item a .img img
 {
 	width: 100%;
   	display: block;
@@ -49,7 +41,7 @@
 	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 }
-.videos .conteudo .itens .item a:hover .img img{
+.galery .conteudo .itens .item a:hover .img img{
 	-webkit-box-shadow: 0px 0px 11px 9pxrgba(36, 139, 13, 0.9);
 	-moz-box-shadow: 0px 0px 11px 9px rgba(36, 139, 13, 0.9);
 	box-shadow: 0px 0px 11px 9px rgba(36, 139, 13, 0.9);

@@ -50,6 +50,11 @@
 	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 }
+.noticias .conteudo .itens .item a:hover .img img{
+	-webkit-box-shadow: 0px 0px 11px 9pxrgba(36, 139, 13, 0.9);
+	-moz-box-shadow: 0px 0px 11px 9px rgba(36, 139, 13, 0.9);
+	box-shadow: 0px 0px 11px 9px rgba(36, 139, 13, 0.9);
+}
 
 .noticias .conteudo .itens .item a .informacoes {
     flex: 1; 
@@ -59,8 +64,14 @@
     z-index: 1;
     margin-top: -60px;
     border-radius: 10px;
-    border: 3px solid var(--color-destaque);
+    border: 2px solid var(--color-destaque);
 }
+.noticias .conteudo .itens .item a:hover .informacoes{
+	-webkit-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+}
+
 .noticias .conteudo .itens .item a .informacoes .data
 {
 	position: absolute;
@@ -82,7 +93,7 @@
 .noticias .conteudo .itens .item a .informacoes .titulo:after
 {
 	background-color: var(--color-destaque);
-	bottom: -5px;
+	bottom: -7px;
 }
 .noticias .conteudo .itens .item a .informacoes .descricao
 {
@@ -100,7 +111,9 @@
 	border: 0px;
 	text-transform: initial;
 }
-.noticias .conteudo .itens .item a:hover .informacoes .btn{
+.noticias .conteudo .itens .item a:hover .informacoes{
 	color: rgba(79, 255, 40, 1);
-	transform: scale(1.1);
+}
+.noticias .conteudo .itens .item a .informacoes .btn:hover{
+	color: rgba(79, 255, 40, 1);
 }

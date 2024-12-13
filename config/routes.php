@@ -18,6 +18,6 @@ return function (App $app) {
     $app->get('/projetos', '\App\Controller\HomeController:projetos');
     $app->get('/galeria', '\App\Controller\HomeController:galeria');
     $app->get('/fale-conosco', '\App\Controller\HomeController:fale_conosco');
-    $app->get('/{any}', '\App\Controller\HomeController:page');
+    $app->get('/{any}', '\App\Controller\HomeController:projeto_detalhe');
 };
 

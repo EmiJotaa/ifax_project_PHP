@@ -1,0 +1,32 @@
+.projeto{
+	width: 100%;
+	display: block;
+	padding: 80px 0;
+	border-top: 50px solid transparent;
+    border-image: url('../../imagens/pintura.png') 25 round;
+    background-image: url('../../imagens/flores.jpg');
+	background-position: right;
+	background-size: cover;
+}
+.projeto .conteudo{
+	width: 100%;
+	display: block;
+}
+.projeto .conteudo img{
+	width: 100%;
+	display: block;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
+}
+@media only screen and (min-width: 1160px){
+	.projeto .conteudo img{
+		width: 46%;
+		margin-left: 50px;
+		margin-bottom: 30px;
+		float: right;
+	}
+}
+

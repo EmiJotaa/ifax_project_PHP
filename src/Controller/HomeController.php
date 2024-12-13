@@ -18,16 +18,6 @@ final class HomeController
         return $renderer->render($response, "home.php", $data);
     }
 
-    public function page(
-        ServerRequestInterface $request, 
-        ResponseInterface $response,
-        $args
-    ) {
-        $data['informacoes'] = array();
-        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
-        return $renderer->render($response, "home.php", $data);
-    }
-
     public function quem_somos(
         ServerRequestInterface $request, 
         ResponseInterface $response,
@@ -140,5 +130,28 @@ final class HomeController
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "fale_conosco.php", $data);
+    }
+
+    public function projeto_detalhe(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $data['informacoes'] = array(
+            'titleHeader' => 'Projetos - Instituto da família do Alto Xingu',
+            'title' => 'Nome projeto - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'projetos',
+                    'nome' => '- Projetos'
+                ],
+                [
+                    'link' => 'projetado',
+                    'nome' => '- Nome projeto'
+                ]
+            )
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "projeto.php", $data);
     }
 }
