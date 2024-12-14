@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="conteudo">
 				<h2 class="titulo">
-					<i class="fas fa-wrench"></i>Projetos - Editar
+					<i class="far fa-folder"></i>Projetos - Editar
 				</h2>
 				<div class="form">
 					<form action="" method="POST" enctype="multipart/form-data">

@@ -29,7 +29,11 @@ class Sql {
 
 	private function bindParam($statement, $key, $value)
 	{
-		$statement->bindParam($key, strip_tags(trim($value)));
+		if($key !== ':descricao'){
+			$value = strip_tags(trim($value));
+		}
+		
+		$statement->bindParam($key, $value);
 	}
 
 	public function query($rawQuery, $params = array())
@@ -58,18 +62,22 @@ class Sql {
 				$sqlCampos .= $value.", ";
 			}
 		}
-		$sqlWhere = "";
-		$where = !is_array($where) ? [$where] : $where;
-		foreach ($where as $key => $value) {
-			if (end($where) == $value) {
-				$sqlWhere .= $key." = :".$key;
-			}else{
-				$sqlWhere .= $key." = :".$key." AND ";
+		if($where){
+			$sqlWhere = "";
+			$where = !is_array($where) ? [$where] : $where;
+			foreach ($where as $key => $value) {
+				if (end($where) == $value) {
+					$sqlWhere .= $key." = :".$key;
+				}else{
+					$sqlWhere .= $key." = :".$key." AND ";
+				}
+				$parans[':'.$key] = $value;
 			}
-			$parans[':'.$key] = $value;
+			$stmt = $this->conn->prepare("SELECT $sqlCampos FROM $table WHERE $sqlWhere");
+			$this->setParams($stmt, $parans);
+		}else{
+			$stmt = $this->conn->prepare("SELECT $sqlCampos FROM $table");
 		}
-		$stmt = $this->conn->prepare("SELECT $sqlCampos FROM $table WHERE $sqlWhere");
-		$this->setParams($stmt, $parans);
 		$stmt->execute();
 		return $stmt->fetchAll(\PDO::FETCH_ASSOC);
 	}

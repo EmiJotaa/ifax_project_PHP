@@ -8,6 +8,7 @@ return function (App $app) {
 
     $app->post('/login', '\App\Controller\AdminController:verifica_login');
 
+
     //PROJETOS
     $app->get('/admin-projetos', '\App\Controller\ProjetoController:index');
     $app->get('/admin-projetos-create', '\App\Controller\ProjetoController:create');
@@ -16,6 +17,7 @@ return function (App $app) {
 
     $app->post('/admin-projetos-create', '\App\Controller\ProjetoController:insert');
     $app->post('/admin-projetos-edit/{id}', '\App\Controller\ProjetoController:update');
+
 
     //NOTICIAS
     $app->get('/admin-noticias', '\App\Controller\NoticiaController:index');
@@ -26,6 +28,15 @@ return function (App $app) {
     $app->post('/admin-noticias-create', '\App\Controller\NoticiaController:insert');
     $app->post('/admin-noticias-edit/{id}', '\App\Controller\NoticiaController:update');
 
+
+    //VIDEOS
+    $app->get('/admin-videos', '\App\Controller\VideoController:index');
+    $app->get('/admin-videos-create', '\App\Controller\VideoController:create');
+    $app->get('/admin-videos-edit/{id}', '\App\Controller\VideoController:edit');
+    $app->get('/admin-videos-delete/{id}', '\App\Controller\VideoController:delete');
+
+    $app->post('/admin-videos-create', '\App\Controller\VideoController:insert');
+    $app->post('/admin-videos-edit/{id}', '\App\Controller\VideoController:update');
 
 
 

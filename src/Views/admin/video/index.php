@@ -4,11 +4,11 @@
 		<div class="container">
 			<div class="conteudo">
 				<h2 class="titulo">
-					<i class="far fa-newspaper"></i>Notícias
+					<i class="fab fa-youtube"></i>Video
 				</h2>
 				<div class="topo">
 					<div class="botoes">
-						<a href="<?=URL_BASE?>admin-noticias-create" class="btn">Cadastrar Novo</a>
+						<a href="<?=URL_BASE?>admin-videos-create" class="btn">Cadastrar Novo</a>
 					</div>
 					<div class="pesquisa">
 						<form action="#" method="GET">
@@ -30,15 +30,15 @@
 						<tbody>
 							<?php						      
 						    if($data['informacoes']['listagem']){
-						        foreach ($data['informacoes']['listagem'] as $noticia) { ?>
+						        foreach ($data['informacoes']['listagem'] as $video) { ?>
 						        	<tr>
-										<td><?=$noticia['id']?></td>
+										<td><?=$video['id']?></td>
 										<td>
-											<a href="<?=URL_BASE?>admin-noticias-edit/<?=$noticia['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-noticias-delete/<?=$noticia['id']?>"><i class="fas fa-trash-alt"></i></a>
+											<a href="<?=URL_BASE?>admin-videos-edit/<?=$video['id']?>"><i class="far fa-edit"></i></a>
+											<a href="<?=URL_BASE?>admin-videos-delete/<?=$video['id']?>"><i class="fas fa-trash-alt"></i></a>
 										</td>
-										<td><?=$noticia['titulo']?></td>
-										<td><?= date('d/m/Y', strtotime($noticia['data_cadastro']))?></td>
+										<td><?=$video['titulo']?></td>
+										<td><?= date('d/m/Y', strtotime($video['data_cadastro']))?></td>
 									</tr>		
 						    <?php   }
 						    }

@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="conteudo">
 				<h2 class="titulo">
-					<i class="fas fa-wrench"></i>Notícias - Editar
+					<i class="far fa-newspaper"></i>Notícias - Editar
 				</h2>
 				<div class="form">
 					<form action="" method="POST" enctype="multipart/form-data">
@@ -38,10 +38,10 @@
 							<input type="file" name="galeria_imagens[]" multiple accept="image/*">
 						</div>
 						<?php
-						if ($data['informacoes']['galeria1'] && count($data['informacoes']['galeria1']) > 0) {?>
+						if ($data['informacoes']['galeria'] && count($data['informacoes']['galeria']) > 0) {?>
 						<div class="campo imagens">
 							<?php
-							foreach ($data['informacoes']['galeria1'] as $imagem) {?>
+							foreach ($data['informacoes']['galeria'] as $imagem) {?>
 							<div class="item">
 								<img src="<?=URL_BASE?><?=$imagem['caminho']?>">
 								<label>

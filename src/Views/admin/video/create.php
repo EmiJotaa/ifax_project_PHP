@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="conteudo">
 				<h2 class="titulo">
-					<i class="far fa-folder"></i>Projetos - Novo
+					<i class="fab fa-youtube"></i>Videos - Novo
 				</h2>
 				<div class="form">
 					<form action="#" method="POST" enctype="multipart/form-data">
@@ -17,16 +17,12 @@
 							<input type="date" name="data" required>
 						</div>
 						<div class="campo">
-							<label>Descrição*</label>
-							<textarea name="descricao" id="descricao" required></textarea>
+							<label>URL Youtube*</label>
+							<input type="text" name="link_youtube" required>
 						</div>
 						<div class="campo">
 							<label>Imagem Principal*</label>
 							<input type="file" name="imagem_principal" required accept="image/*">
-						</div>
-						<div class="campo">
-							<label>Galeria de Imagens</label>
-							<input type="file" name="galeria_imagens[]" multiple accept="image/*">
 						</div>
 						<div class="campo">
 							<label>Ativo*</label>
@@ -44,8 +40,4 @@
 		</div>
 	</section>
 </main>
-<script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
-<script>
-	CKEDITOR.replace('descricao')
-</script>
 <?=$this->fetch('commons/footer.php', $data)?>

@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="conteudo">
 				<h2 class="titulo">
-					<i class="fas fa-wrench"></i>Notícias - Novo
+					<i class="far fa-newspaper"></i>Notícias - Novo
 				</h2>
 				<div class="form">
 					<form action="#" method="POST" enctype="multipart/form-data">

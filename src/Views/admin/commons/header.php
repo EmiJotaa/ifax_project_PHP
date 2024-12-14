@@ -63,7 +63,7 @@
                             <li class="<?=($data['informacoes']['menuActive'] === 'noticias') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-noticias"><i class="far fa-newspaper"></i>Notícias</a></li>
                             
                             <li class="<?=($data['informacoes']['menuActive'] === 'fotos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-fotos"><i class="far fa-image"></i>Fotos</a></li>
-                            <li class="<?=($data['informacoes']['menuActive'] === 'videos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-videos"><i class="fas fa-video"></i>Videos</a></li>
+                            <li class="<?=($data['informacoes']['menuActive'] === 'videos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-videos"><i class="fab fa-youtube"></i>Videos</a></li>
                         </ul>
                         <p>Configurações</p>
                         <ul>
