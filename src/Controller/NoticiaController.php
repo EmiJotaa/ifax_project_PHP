@@ -68,7 +68,7 @@ final class NoticiaController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Novo Notícia - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Nova Notícia - Painel Administrativo - Instituto da família do Alto Xingu',
             'menuActive' => 'noticias'
         );
 
@@ -128,7 +128,7 @@ final class NoticiaController
 
         $_SESSION['alerta_mensagem'] = array(
             'titulo' => 'Sucesso!',
-            'mensagem' => 'O Noticia foi deletado corretamente.',
+            'mensagem' => 'A Noticia foi deletada corretamente.',
             'classe' => ''
         );
 
@@ -194,7 +194,7 @@ final class NoticiaController
 
         $_SESSION['alerta_mensagem'] = array(
             'titulo' => 'Sucesso!',
-            'mensagem' => 'O Notícia foi adicionado corretamente.',
+            'mensagem' => 'A Notícia foi adicionada corretamente.',
             'classe' => ''
         );
 
@@ -241,7 +241,7 @@ final class NoticiaController
                 }else{
                     $_SESSION['alerta_mensagem'] = array(
                         'titulo' => 'Erro :(',
-                        'mensagem' => 'Ops, não foi possivel atualizar o noticia, porque você tentou excluir a imagem principal e a nova imagem que tentou enviar, aconteceu um erro. Por favor tente novamente com outra imagem!',
+                        'mensagem' => 'Ops, não foi possivel atualizar a notícia, porque você tentou excluir a imagem principal e a nova imagem que tentou enviar, aconteceu um erro. Por favor tente novamente com outra imagem!',
                         'classe' => 'erro'
                     );
                     header('Location: '.URL_BASE.'admin-noticias');
@@ -250,7 +250,7 @@ final class NoticiaController
             }else{
                 $_SESSION['alerta_mensagem'] = array(
                     'titulo' => 'Erro :(',
-                    'mensagem' => 'Ops, não foi possivel atualizar o noticia, porque você tentou excluir a imagem principal porém não enviou nenhuma nova imagem para ser exibida no site! Por favor tente novamente.',
+                    'mensagem' => 'Ops, não foi possivel atualizar a notícia, porque você tentou excluir a imagem principal porém não enviou nenhuma nova imagem para ser exibida no site! Por favor tente novamente.',
                     'classe' => 'erro'
                 );
 
@@ -309,7 +309,7 @@ final class NoticiaController
 
         $_SESSION['alerta_mensagem'] = array(
             'titulo' => 'Sucesso!',
-            'mensagem' => 'O Notícia foi atualizado corretamente.',
+            'mensagem' => 'A Notícia foi atualizada corretamente.',
             'classe' => ''
         );
 

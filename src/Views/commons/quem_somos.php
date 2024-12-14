@@ -10,7 +10,7 @@
 				<a href="<?=URL_BASE?>quem-somos" class="btn">Continue lendo</a>
 			</div>
 			<div class="video">
-				<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=ij0DVQhj0n8">
+				<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 					<img src="<?=URL_BASE?>resources/imagens/quem-somos.png">
 					<i class="fas fa-play"></i>
 				</a>				

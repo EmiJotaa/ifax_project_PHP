@@ -38,6 +38,15 @@ return function (App $app) {
     $app->post('/admin-videos-create', '\App\Controller\VideoController:insert');
     $app->post('/admin-videos-edit/{id}', '\App\Controller\VideoController:update');
 
+    //FOTOS
+    $app->get('/admin-fotos', '\App\Controller\FotoController:index');
+    $app->get('/admin-fotos-create', '\App\Controller\FotoController:create');
+    $app->get('/admin-fotos-edit/{id}', '\App\Controller\FotoController:edit');
+    $app->get('/admin-fotos-delete/{id}', '\App\Controller\FotoController:delete');
+
+    $app->post('/admin-fotos-create', '\App\Controller\FotoController:insert');
+    $app->post('/admin-fotos-edit/{id}', '\App\Controller\FotoController:update');
+
 
 
     //ROTAS DO WEB SITE
