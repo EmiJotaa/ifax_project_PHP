@@ -4,6 +4,7 @@
     font-style: normal;
     font-display: swap;
     src: url('../../fonts/perisphere/Perisphere.woff2') format('woff2');
+    letter-spacing: 3px;
 }
 
 @font-face {

@@ -34,14 +34,14 @@
             <div class="conteudo">
                 <div class="right">
                     <div class="usuario">
-                        <p>Marco Júnior</p>
+                        <p><?=$_SESSION['usuario_logado']['nome']?></p>
                         <i class="fas fa-caret-down"></i>
                         <div class="foto">
-                            <img src="<?=URL_BASE?>resources/imagens/3por4.png">
+                            <img src="<?=URL_BASE?><?=$_SESSION['usuario_logado']['foto']?>">
                         </div>
                         <ul class="submenu">
-                            <li><a href="#">Perfil</a></li>
-                            <li><a href="#">Configurações</a></li>
+                            <li><a href="<?=URL_BASE?>admin-usuarios-edit/<?=$_SESSION['usuario_logado']['id']?>">Perfil</a></li>
+                            <li><a href="<?=URL_BASE?>">Configurações</a></li>
                             <li><a href="<?=URL_BASE?>logout">Sair</a></li>
                         </ul>
                     </div>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="copy">
                         <p>Todos direitos reservados © <?=date('Y')?></p>
-                        <p>Desenvolvido por <a href="#">Marquin.Do.Som<i class="fab fa-instagram"></i></a></p>
+                        <p>Desenvolvido por <a href="https://www.instagram.com/marquin.do.som/">Marquin.Do.Som<i class="fab fa-instagram"></i></a></p>
                     </div>
                 </div>
             </div>

@@ -73,7 +73,7 @@ final class AdminController
         $result = $usuario->selectUsuario('*', array('email' => $posts['usuario']));
 
         if($result){
-            if ($result[0]['senha'] !== $posts['senha']) {
+            if (!password_verify($posts['senha'], $result[0]['senha'])) {
                 header('Location:'.URL_BASE.'login');
                 exit();
             }
@@ -318,6 +318,11 @@ final class AdminController
 
         $usuarios = new Usuario();
         $usuarios->updateUsuario($valores, $where);
+
+        if ($_SESSION['usuario_logado']['id'] === (int)$args['id']) {
+            $result = $usuarios->selectUsuario('*', array('id' => (int)$args['id']));
+            $_SESSION['usuario_logado'] = $result[0];
+        }
 
         $_SESSION['alerta_mensagem'] = array(
             'titulo' => 'Sucesso!',

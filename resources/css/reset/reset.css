@@ -39,7 +39,6 @@ body {
 	color: #5B360D;
 	font-family: var(--font-family-perisphere);
 	font-size: 20px;
-	letter-spacing: 3px;
 }
 a{
 	color: #5B360D;
@@ -81,7 +80,6 @@ table {
 	font-family: var(--font-family-perisphere);
 	position: relative;
 	margin-bottom: 40px;
-	letter-spacing: 5px;
 }
 .titulo:after
 {

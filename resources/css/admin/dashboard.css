@@ -258,6 +258,13 @@ header .conteudo .nav .copy a{
 	width: 100%;
 	display: block;
 }
+.dashboard .conteudo p{
+	font-family: var(--font-family);
+	
+}
+.dashboard .conteudo a{
+	color: var(--color-black);
+}
 .dashboard .conteudo .topo{
 	width: 100%;
 	display: flex;
