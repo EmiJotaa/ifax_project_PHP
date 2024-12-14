@@ -154,4 +154,27 @@ final class HomeController
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "projeto.php", $data);
     }
+
+        public function noticia_detalhe(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $data['informacoes'] = array(
+            'titleHeader' => 'Noticias - Instituto da família do Alto Xingu',
+            'title' => 'Nome noticia - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'noticias',
+                    'nome' => '- Noticias'
+                ],
+                [
+                    'link' => 'projetado',
+                    'nome' => '- Nome noticia'
+                ]
+            )
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "noticia.php", $data);
+    }
 }

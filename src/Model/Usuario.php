@@ -50,6 +50,19 @@ class Usuario extends Model {
            		exit();
 			}
 		}
+	}
 
+	function selectUsuariosPage($limit, $offset)
+	{
+		$sql = "SELECT * FROM ".$this->table." ORDER BY id DESC LIMIT ".$offset.", ".$limit;
+ 
+		return $this->querySelect($sql);
+	}
+ 
+	function selectUsuariosPesquisa($pesquisa)
+	{
+		$sql = "SELECT * FROM ".$this->table." WHERE titulo LIKE '%".$pesquisa."%' ORDER BY id DESC";
+ 
+		return $this->querySelect($sql);
 	}
 }

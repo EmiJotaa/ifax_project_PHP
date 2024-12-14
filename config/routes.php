@@ -47,6 +47,15 @@ return function (App $app) {
     $app->post('/admin-fotos-create', '\App\Controller\FotoController:insert');
     $app->post('/admin-fotos-edit/{id}', '\App\Controller\FotoController:update');
 
+    //USUARIOS
+    $app->get('/admin-usuarios', '\App\Controller\AdminController:usuarios');
+    $app->get('/admin-usuarios-create', '\App\Controller\AdminController:usuarios_create');
+    $app->get('/admin-usuarios-edit/{id}', '\App\Controller\AdminController:usuarios_edit');
+    $app->get('/admin-usuarios-delete/{id}', '\App\Controller\AdminController:usuarios_delete');
+
+    $app->post('/admin-usuarios-create', '\App\Controller\AdminController:usuarios_insert');
+    $app->post('/admin-usuarios-edit/{id}', '\App\Controller\AdminController:usuarios_update');
+
 
 
     //ROTAS DO WEB SITE
@@ -57,6 +66,7 @@ return function (App $app) {
     $app->get('/projetos', '\App\Controller\HomeController:projetos');
     $app->get('/midias', '\App\Controller\HomeController:midias');
     $app->get('/fale-conosco', '\App\Controller\HomeController:fale_conosco');
+    $app->get('/noticia/{any}', '\App\Controller\HomeController:noticia_detalhe');
     $app->get('/{any}', '\App\Controller\HomeController:projeto_detalhe');
 };
 
