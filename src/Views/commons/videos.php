@@ -9,49 +9,49 @@
 			</div>
 			<div class="itens">
 				<div class="item">
-					<a href="#">
+					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 						<div class="img">
 							<img src="<?=URL_BASE?>resources/imagens/videos.png">
 						</div>
 					</a>
 				</div>
 				<div class="item">
-					<a href="#">
+					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 						<div class="img">
 							<img src="<?=URL_BASE?>resources/imagens/videos.png">
 						</div>
 					</a>
 				</div>
 				<div class="item">
-					<a href="#">
+					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 						<div class="img">
 							<img src="<?=URL_BASE?>resources/imagens/videos.png">
 						</div>
 					</a>
 				</div>
 				<div class="item">
-					<a href="#">
+					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 						<div class="img">
 							<img src="<?=URL_BASE?>resources/imagens/videos.png">
 						</div>
 					</a>
 				</div>
 				<div class="item">
-					<a href="#">
+					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 						<div class="img">
 							<img src="<?=URL_BASE?>resources/imagens/videos.png">
 						</div>
 					</a>
 				</div>
 				<div class="item">
-					<a href="#">
+					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 						<div class="img">
 							<img src="<?=URL_BASE?>resources/imagens/videos.png">
 						</div>
 					</a>
 				</div>
 				<div class="item">
-					<a href="#">
+					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 						<div class="img">
 							<img src="<?=URL_BASE?>resources/imagens/videos.png">
 						</div>

@@ -84,7 +84,7 @@
 	padding: 20px 25px;
 	background-color: #5B360D;
 	border: 2px solid rgba(79, 255, 40, 1);
-	border-radius: 8%;
+	border-radius: 10%;
 }
 .painel-login .login .container .conteudo form legend{
 	font-size: 22px;

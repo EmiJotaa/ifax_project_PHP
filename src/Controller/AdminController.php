@@ -25,7 +25,7 @@ final class AdminController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Painel Administrativo - Eletrônica Marquinho',
+            'titleHeader' => 'Painel Administrativo - Instituto da família do Alto Xingu',
             'menuActive' => 'dashboard'
         );
 
@@ -41,7 +41,7 @@ final class AdminController
         Usuario::verifica_login(true);
         
         $data['informacoes'] = array(
-            'titleHeader' => 'Login - Eletrônica Marquinho',
+            'titleHeader' => 'Login - Instituto da família do Alto Xingu',
         );
 
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES_ADMIN);

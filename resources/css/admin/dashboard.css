@@ -14,7 +14,7 @@ body.white main p{
 }
 body.white main .titulo{
 	font-size: 25px;
-	font-family: var(--font-family-bold);
+	font-family: var(--font-family);
 }
 body.white main .titulo i{
 	font-size: 25px;
@@ -346,11 +346,12 @@ header .conteudo .nav .copy a{
 	background-color: #a2a2a2;
 	color: var(--color-white);
 	text-transform: uppercase;
-	font-family: var(--font-family-bold);
+	font-family: var(--font-family);
 }
 .dashboard .conteudo .lista table thead td{
 	padding: 10px 15px;
 	border-right: 1px solid var(--color-white);
+	font-size: 15px;
 }
 .dashboard .conteudo .lista table tbody tr td{
 	border: 1px solid #a2a2a2;
@@ -487,7 +488,7 @@ section.alerta .container .conteudo{
 }
 section.alerta .container .conteudo h3{
 	font-size: 35px;
-	font-family: var(--font-family-bold);
+	font-family: var(--font-family);
 	color: green;
 	margin-bottom: 10px;
 }
@@ -499,7 +500,7 @@ section.alerta .container .conteudo p{
 	max-width: 450px;
 	text-align: center;
 	margin-bottom: 15px;
-	font-family: var(--font-family-semibold);
+	font-family: var(--font-family);
 }
 section.alerta .container .conteudo a{
 	background-color: red;

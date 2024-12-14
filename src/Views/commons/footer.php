@@ -37,7 +37,7 @@
                     		<a href="<?=URL_BASE?>projetos">
                     			<i class="fas fa-chevron-right"></i>Projetos     			
                     		</a>
-                    		<a href="<?=URL_BASE?>galeria">
+                    		<a href="<?=URL_BASE?>midias">
                     			<i class="fas fa-chevron-right"></i>Galeria          				
                     		</a>
                     		<a href="<?=URL_BASE?>fale-conosco">
@@ -64,15 +64,6 @@
                     		<div class="info">
                     			<h4>Telefone:</h4>
                     			<a href="tel:+5566992589927">+55 (66) 99258-9927</a>
-                    		</div>
-                    	</div>
-                    	<div class="item">
-                    		<div class="icone">
-                    			<i class="fas fa-mobile-screen"></i>
-                    		</div>
-                    		<div class="info">
-                    			<h4>Telefone:</h4>
-                    			<a href="tel:+55669981492520">+55 (66) 998149-2520</a>
                     		</div>
                     	</div>
                     	<div class="item">

@@ -69,7 +69,7 @@
                         <a href="<?=URL_BASE?>noticias">Notícias</a>
                         <a href="<?=URL_BASE?>donate">Doação</a>
                         <a href="<?=URL_BASE?>projetos">Projetos</a>
-                        <a href="<?=URL_BASE?>galeria">Galeria</a>
+                        <a href="<?=URL_BASE?>midias">Galeria</a>
                         <a href="<?=URL_BASE?>fale-conosco">Fale Conosco</a>
                     </nav>
                     <a href="#" class="btn-nav">

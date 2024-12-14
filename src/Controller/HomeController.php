@@ -94,7 +94,7 @@ final class HomeController
         return $renderer->render($response, "projetos.php", $data);
     }
 
-    public function galeria(
+    public function midias(
         ServerRequestInterface $request, 
         ResponseInterface $response,
         $args
@@ -110,7 +110,7 @@ final class HomeController
             )
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
-        return $renderer->render($response, "galeria.php", $data);
+        return $renderer->render($response, "midias.php", $data);
     }
 
     public function fale_conosco(
