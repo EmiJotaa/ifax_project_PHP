@@ -94,9 +94,6 @@
     transition: .4s;
 }
 .listagem .itens .item a:hover .informacoes{
-	-webkit-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
-	-moz-box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
-	box-shadow: 0px 0px 11px 9px rgba(91,54,13,1);
 	color: rgba(79, 255, 40, 1);
 }
 .listagem .itens .item a .informacoes .data

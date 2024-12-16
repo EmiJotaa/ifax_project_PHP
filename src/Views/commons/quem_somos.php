@@ -13,7 +13,8 @@
 				<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
 					<img src="<?=URL_BASE?>resources/imagens/quem-somos.png">
 					<i class="fas fa-play"></i>
-				</a>				
+				</a>
+				<!-- <iframe width="615" height="418" src="https://www.youtube.com/embed/7UeEg5ht-eI?si=_XcRe0co92TauKCx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>			 -->
 			</div>
 		</div>
 	</div>

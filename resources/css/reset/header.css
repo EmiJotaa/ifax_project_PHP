@@ -96,7 +96,6 @@ header .conteudo .menu nav
 {
 	width: 100vw;
 	height: 100vh;
-/*	background-color: var(--color-destaque);*/
 	background-image: url('../../imagens/flores3.png');
 	background-position: right;
 	background-size: cover;
@@ -128,6 +127,7 @@ header .conteudo .menu nav a{
 	font-size: 30px;
 	padding: 10px;
 	border-radius: 50px;
+	margin: 3px 0;
 }
 
 header .conteudo .menu nav a:hover{
@@ -203,7 +203,7 @@ header .conteudo .menu.active .btn-nav
 		align-items: center;
 		flex-direction: row;
 		margin: 0 auto;
-		padding: 0px 50px;
+		padding: 0 50px;
 		position: relative;
 		top: initial;
 		left: initial;

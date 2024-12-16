@@ -57,6 +57,14 @@ return function (App $app) {
     $app->post('/admin-usuarios-edit/{id}', '\App\Controller\AdminController:usuarios_update');
 
 
+    //CONFIGURAÇÃO
+    $app->get('/admin-config', '\App\Controller\ConfigController:index');
+    $app->get('/admin-config-create', '\App\Controller\ConfigController:create');
+    $app->get('/admin-config-edit/{id}', '\App\Controller\ConfigController:edit');
+    $app->get('/admin-config-delete/{id}', '\App\Controller\ConfigController:delete');
+
+    $app->post('/admin-config-create', '\App\Controller\ConfigController:insert');
+    $app->post('/admin-config-edit/{id}', '\App\Controller\ConfigController:update');
 
     //ROTAS DO WEB SITE
     $app->get('/', '\App\Controller\HomeController:home');
