@@ -8,15 +8,21 @@
                     	</a>
                     	<p class="descricao">Desde 2020, a IFAX atua no apoio de formação dos brigadistas indígenas e na conscientização das aldeias xinguanas quanto ao manejo do fogo e prevenção de incêndios.</p>
                     	<div class="redes-sociais">
-                        	<a href="https://www.facebook.com/ProducoesFilmesTakuma" target="_blank">
-                            	<i class="fab fa-facebook-f"></i>
-                       	    </a>
-                       		<a href="https://www.instagram.com/instituto_ifax?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            	<i class="fab fa-instagram"></i>
-                        	</a>
-                        	<a href="https://www.youtube.com/@tvxingu" target="_blank">
-                            	<i class="fab fa-youtube"></i>
-                        	</a>
+                        	<?php if ($data['config']['rede_social_facebook']): ?>
+	                            <a href="<?=$data['config']['rede_social_facebook']?>" target="_blank">
+	                                <i class="fab fa-facebook-f"></i>
+	                            </a>      
+	                        <?php endif ?>
+	                        <?php if ($data['config']['rede_social_instagram']): ?>
+	                            <a href="<?=$data['config']['rede_social_instagram']?>" target="_blank">
+	                                <i class="fab fa-instagram"></i>
+	                            </a>
+	                        <?php endif ?>
+	                        <?php if ($data['config']['rede_social_youtube']): ?>
+	                            <a href="<?=$data['config']['rede_social_youtube']?>" target="_blank">
+	                                <i class="fab fa-youtube"></i>
+	                            </a>
+	                        <?php endif ?> 
                     	</div>
                     </div>
                     <div class="menu">
@@ -48,33 +54,39 @@
                     </div>
                     <div class="contatos">
                     	<h3 class="titulo">Contatos</h3>
-                    	<div class="item">
-                    		<div class="icone">
-                    			<i class="fas fa-location-dot"></i>
-                    		</div>
-                    		<div class="info">
-                    			<h4>Endereço</h4>
-                    			<a href="https://maps.app.goo.gl/wDYwuHmSL91JwTPg9" target="_blank">Canarana - MT 78640-000</a>
-                    		</div>
-                    	</div>
-                    	<div class="item">
-                    		<div class="icone">
-                    			<i class="fas fa-mobile-screen"></i>
-                    		</div>
-                    		<div class="info">
-                    			<h4>Telefone:</h4>
-                    			<a href="tel:+5566992589927">+55 (66) 99258-9927</a>
-                    		</div>
-                    	</div>
-                    	<div class="item">
-                    		<div class="icone">
-                    			<i class="far fa-envelope"></i>
-                    		</div>
-                    		<div class="info">
-                    			<h4>E-mail</h4>
-                    			<a href="mailto:institutoifax@gmail.com">institutoifax@gmail.com</a>
-                    		</div>
-                    	</div>
+                    	<?php if ($data['config']['contato_telefone']): ?>
+	                    	<div class="item">
+	                    		<div class="icone">
+	                    			<i class="fas fa-mobile-screen"></i>
+	                    		</div>
+	                    		<div class="info">
+	                    			<h4>Telefone:</h4>
+	                    			<a href="tel:<?=$data['config']['contato_telefone']?>"><?=$data['config']['contato_telefone']?></a>
+	                    		</div>
+	                    	</div>
+	                    <?php endif ?> 
+	                    <?php if ($data['config']['contato_email']): ?>
+	                    	<div class="item">
+	                    		<div class="icone">
+	                    			<i class="far fa-envelope"></i>
+	                    		</div>
+	                    		<div class="info">
+	                    			<h4>E-mail</h4>
+	                    			<a href="mailto:<?=$data['config']['contato_email']?>"><?=$data['config']['contato_email']?></a>
+	                    		</div>
+	                    	</div>
+                    	<?php endif ?>
+                    	<?php if ($data['config']['contato_endereco']): ?>
+	                    	<div class="item">
+	                    		<div class="icone">
+	                    			<i class="fas fa-location-dot"></i>
+	                    		</div>
+	                    		<div class="info">
+	                    			<h4>Endereço</h4>
+	                    			<a><?=$data['config']['contato_endereco']?></a>
+	                    		</div>
+	                    	</div>
+                    	<?php endif ?>
                     </div>
                 </div>
 			</div>

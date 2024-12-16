@@ -5,6 +5,7 @@ namespace App\Controller;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Slim\Views\PhpRenderer;
+use App\Model\Config;
 
 final class HomeController
 {
@@ -13,7 +14,20 @@ final class HomeController
         ResponseInterface $response,
         $args
     ) {
-        $data['informacoes'] = array();
+        $data['informacoes'] = array(
+            'titleHeader' => 'Instituto da família do Alto Xingu'
+        );
+
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
+        );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "home.php", $data);
     }
@@ -32,6 +46,16 @@ final class HomeController
                     'nome' => '- Quem Somos'
                 ]
             )
+        );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "quem_somos2.php", $data);
@@ -52,6 +76,16 @@ final class HomeController
                 ]
             )
         );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
+        );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "noticias.php", $data);
     }
@@ -70,6 +104,16 @@ final class HomeController
                     'nome' => '- Faça uma doação'
                 ]
             )
+        );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "donate.php", $data);
@@ -90,6 +134,16 @@ final class HomeController
                 ]
             )
         );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
+        );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "projetos.php", $data);
     }
@@ -109,6 +163,16 @@ final class HomeController
                 ]
             )
         );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
+        );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "midias.php", $data);
     }
@@ -127,6 +191,16 @@ final class HomeController
                     'nome' => '- Fale Conosco'
                 ]
             )
+        );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "fale_conosco.php", $data);
@@ -151,6 +225,16 @@ final class HomeController
                 ]
             )
         );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
+        );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "projeto.php", $data);
     }
@@ -173,6 +257,16 @@ final class HomeController
                     'nome' => '- Nome noticia'
                 ]
             )
+        );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "noticia.php", $data);

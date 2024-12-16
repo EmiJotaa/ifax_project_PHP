@@ -36,30 +36,40 @@
             <div class="conteudo">
                 <div class="topo">
                     <div class="redes-sociais">
-                        <a href="https://www.facebook.com/ProducoesFilmesTakuma" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/instituto_ifax?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@tvxingu" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                        <?php if ($data['config']['rede_social_facebook']): ?>
+                            <a href="<?=$data['config']['rede_social_facebook']?>" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>      
+                        <?php endif ?>
+                        <?php if ($data['config']['rede_social_instagram']): ?>
+                            <a href="<?=$data['config']['rede_social_instagram']?>" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        <?php endif ?>
+                        <?php if ($data['config']['rede_social_youtube']): ?>
+                            <a href="<?=$data['config']['rede_social_youtube']?>" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        <?php endif ?>                 
                     </div>
                     <div class="contatos">
-                        <a href="tel:+5566992589927">
-                            <i class="fas fa-mobile-screen-button"></i>
-                            +55 (66) 99258-9927
-                        </a>
-                        <a href="mailto:institutoifax@gmail.com">
-                            <i class="far fa-envelope"></i>
-                            institutoifax@gmail.com
-                        </a>
+                        <?php if ($data['config']['contato_telefone']): ?>
+                            <a href="tel:<?=$data['config']['contato_telefone']?>">
+                                <i class="fas fa-mobile-screen-button"></i>
+                                <?=$data['config']['contato_telefone']?>
+                            </a>
+                        <?php endif ?>
+                        <?php if ($data['config']['contato_email']): ?>
+                            <a href="mailto:<?=$data['config']['contato_email']?>">
+                                <i class="far fa-envelope"></i>
+                                <?=$data['config']['contato_email']?>
+                            </a>
+                        <?php endif ?>
                     </div>
                 </div>
                 <div class="logo">
                     <a href="<?=URL_BASE?>">
-                        <img src="<?=URL_BASE?>resources/imagens/logo.png">
+                        <img src="<?=URL_BASE.$data['config']['logo']?>">
                     </a>
                 </div>
                 <div class="menu">

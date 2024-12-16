@@ -47,4 +47,18 @@ class Config extends Model {
  
 		return $this->querySelect($sql);
 	}
+	public static function getConfig($nome)
+	{
+		$sql = new Sql();
+
+		$consulta = "SELECT * FROM config WHERE nome = '".$nome."' LIMIT 1";
+
+		$retorno = $sql->querySelect($consulta);
+
+		if (count($retorno) <= 0) {
+			return false;
+		}else{
+			return $retorno[0]['valor'];
+		}
+	}
 }
