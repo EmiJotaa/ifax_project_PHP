@@ -8,55 +8,17 @@
 				</div>
 			</div>
 			<div class="itens">
-				<div class="item">
-					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/videos.png">
+				<?php if (isset($data['informacoes']['listaVideos'])): ?>
+					<?php foreach ($data['informacoes']['listaVideos'] as $video): ?>
+						<div class="item">
+							<a class="swipebox-video" rel="youtube" href="<?=URL_BASE.$video['link_youtube']?>">
+								<div class="img">
+									<img src="<?=URL_BASE.$video['imagem_principal']?>">
+								</div>
+							</a>
 						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/videos.png">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/videos.png">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/videos.png">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/videos.png">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/videos.png">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a class="swipebox-video" rel="youtube" href="https://www.youtube.com/watch?v=7UeEg5ht-eI">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/videos.png">
-						</div>
-					</a>
-				</div>
+					<?php endforeach ?>
+				<?php endif ?>
 			</div>
 		</div>
 	</div>

@@ -8,41 +8,17 @@
 				</div>
 			</div>
 			<div class="itens">
-				<div class="item">
-					<a href="<?=URL_BASE?>resources/imagens/img.jpg" class="swipebox" title="Imagem Fotos">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/img.jpg">
+				<?php if (isset($data['informacoes']['listaFotos'])): ?>
+					<?php foreach ($data['informacoes']['listaFotos'] as $foto): ?>
+						<div class="item">
+							<a href="<?=URL_BASE.$foto['imagem_principal']?>" class="swipebox" title="<?=$foto['titulo']?>">
+								<div class="img">
+									<img src="<?=URL_BASE.$foto['imagem_principal']?>">
+								</div>
+							</a>
 						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="<?=URL_BASE?>resources/imagens/img2.jpg" class="swipebox" title="Imagem Fotos">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/img2.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="<?=URL_BASE?>resources/imagens/img3.jpg" class="swipebox" title="Imagem Fotos">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/img3.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="<?=URL_BASE?>resources/imagens/brigadista.png" class="swipebox" title="Imagem Fotos">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="<?=URL_BASE?>resources/imagens/teste.png" class="swipebox" title="Imagem Fotos">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/teste.png">
-						</div>
-					</a>
-				</div>
+					<?php endforeach ?>
+				<?php endif ?>
 			</div>
 		</div>
 	</div>

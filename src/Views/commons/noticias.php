@@ -9,90 +9,23 @@
 				</div>
 			</div>
 			<div class="itens">
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo </h3>
-							<p class="btn">Ver notícia</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver notícia</p>
-						</div>
-					</a>
-				</div>				
+				<?php if (isset($data['informacoes']['listaNoticias'])): ?>
+					<?php foreach ($data['informacoes']['listaNoticias'] as $noticia): ?>
+						<div class="item">
+							<a href="<?=URL_BASE.'noticia/'.$noticia['url_amigavel']?>">
+								<div class="img">
+									<img src="<?=URL_BASE.$noticia['imagem_principal']?>">
+								</div>
+								<div class="informacoes">
+									<p class="data"><?= date('d/m/Y', strtotime($noticia['data_cadastro']))?></p>						
+									<h3 class="titulo"><?=$noticia['titulo']?></h3>
+									<div class="descricao"><?=substr(strip_tags($noticia['descricao']), 0, 120) ?></div>
+									<p class="btn">Ver Noticia</p>
+								</div>
+							</a>
+						</div> 
+					<?php endforeach ?>
+				<?php endif ?>				
 			</div>
 		</div>
 	</div>

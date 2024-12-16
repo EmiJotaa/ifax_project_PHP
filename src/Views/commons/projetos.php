@@ -9,90 +9,24 @@
 				</div>
 			</div>
 			<div class="itens">
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
+				<?php if (isset($data['informacoes']['listaProjetos'])): ?>
+					<?php foreach ($data['informacoes']['listaProjetos'] as $projeto): ?>
+						<div class="item">
+							<a href="<?=URL_BASE.$projeto['url_amigavel']?>">
+								<div class="img">
+									<img src="<?=URL_BASE.$projeto['imagem_principal']?>">
+								</div>
+								<div class="informacoes">
+									<p class="data"><?= date('d/m/Y', strtotime($projeto['data_cadastro']))?></p>						
+									<h3 class="titulo"><?=$projeto['titulo']?></h3>
+									<div class="descricao"><?=substr(strip_tags($projeto['descricao']), 0, 120) ?></div>
+									<p class="btn">Ver Projeto</p>
+								</div>
+							</a>
 						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver Projeto</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo </h3>
-							<p class="btn">Ver Projeto</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver Projeto</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver Projeto</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver Projeto</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver Projeto</p>
-						</div>
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<div class="img">
-							<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-						</div>
-						<div class="informacoes">
-							<p class="data">22/08/2024</p>						
-							<h3 class="titulo">Aqui vem o titulo</h3>
-							<p class="btn">Ver Projeto</p>
-						</div>
-					</a>
-				</div>				
+					<?php endforeach ?>
+				<?php endif ?>
+								
 			</div>
 		</div>
 	</div>

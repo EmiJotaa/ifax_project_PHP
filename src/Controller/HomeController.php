@@ -6,6 +6,10 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Slim\Views\PhpRenderer;
 use App\Model\Config;
+use App\Model\Noticia;
+use App\Model\Projeto;
+use App\Model\Foto;
+use App\Model\Video;
 
 final class HomeController
 {
@@ -14,8 +18,25 @@ final class HomeController
         ResponseInterface $response,
         $args
     ) {
+
+        $noticia = new Noticia();
+        $listaNoticias = $noticia->selectNoticia('*', array('status' => 's'));
+
+        $projeto = new Projeto();
+        $listaProjetos = $projeto->selectProjeto('*', array('status' => 's'));
+
+        $foto = new Foto();
+        $listaFotos = $foto->selectFoto('*', array('status' => 's'));
+
+        $video = new Video();
+        $listaVideos = $video->selectVideo('*', array('status' => 's'));
+
         $data['informacoes'] = array(
-            'titleHeader' => 'Instituto da família do Alto Xingu'
+            'titleHeader' => 'Instituto da família do Alto Xingu',
+            'listaNoticias' => $listaNoticias,
+            'listaProjetos' => $listaProjetos,
+            'listaFotos' => $listaFotos,
+            'listaVideos' => $listaVideos
         );
 
         $data['config'] = array(
@@ -66,8 +87,12 @@ final class HomeController
         ResponseInterface $response,
         $args
     ) {
+        $noticia = new Noticia();
+        $listaNoticias = $noticia->selectNoticia('*', array('status' => 's'));
+
         $data['informacoes'] = array(
             'titleHeader' => 'Notícias - Instituto da família do Alto Xingu',
+            'listaNoticias' => $listaNoticias,
             'title' => 'Notícias - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
@@ -124,8 +149,12 @@ final class HomeController
         ResponseInterface $response,
         $args
     ) {
+        $projeto = new Projeto();
+        $listaProjetos = $projeto->selectProjeto('*', array('status' => 's'));
+
         $data['informacoes'] = array(
             'titleHeader' => 'Projetos - Instituto da família do Alto Xingu',
+            'listaProjetos' => $listaProjetos,
             'title' => 'Projetos - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
@@ -153,8 +182,16 @@ final class HomeController
         ResponseInterface $response,
         $args
     ) {
+        $foto = new Foto();
+        $listaFotos = $foto->selectFoto('*', array('status' => 's'));
+
+        $video = new Video();
+        $listaVideos = $video->selectVideo('*', array('status' => 's'));
+
         $data['informacoes'] = array(
             'titleHeader' => 'Galeria - Instituto da família do Alto Xingu ',
+            'listaFotos' => $listaFotos,
+            'listaVideos' => $listaVideos,
             'title' => 'Galeria - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
@@ -206,6 +243,43 @@ final class HomeController
         return $renderer->render($response, "fale_conosco.php", $data);
     }
 
+        public function noticia_detalhe(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+        $noticia = new Noticia();
+        $listaNoticias = $noticia->selectNoticia('*', array('status' => 's'));
+
+        $data['informacoes'] = array(
+            'titleHeader' => 'Noticias - Instituto da família do Alto Xingu',
+            'listaNoticias' => $listaNoticias,
+            'title' => 'Nome noticia - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'noticias',
+                    'nome' => '- Noticias'
+                ],
+                [
+                    'link' => 'projetado',
+                    'nome' => '- Nome noticia'
+                ]
+            )
+        );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "noticia.php", $data);
+    }
+
     public function projeto_detalhe(
         ServerRequestInterface $request, 
         ResponseInterface $response,
@@ -237,38 +311,5 @@ final class HomeController
         );
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "projeto.php", $data);
-    }
-
-        public function noticia_detalhe(
-        ServerRequestInterface $request, 
-        ResponseInterface $response,
-        $args
-    ) {
-        $data['informacoes'] = array(
-            'titleHeader' => 'Noticias - Instituto da família do Alto Xingu',
-            'title' => 'Nome noticia - Instituto da família do Alto Xingu',
-            'caminho' => array(
-                [
-                    'link' => 'noticias',
-                    'nome' => '- Noticias'
-                ],
-                [
-                    'link' => 'projetado',
-                    'nome' => '- Nome noticia'
-                ]
-            )
-        );
-        $data['config'] = array(
-            'logo' => Config::getConfig('logo'),
-            'nome_site' => Config::getConfig('nome_site'),
-            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
-            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
-            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
-            'contato_endereco' => Config::getConfig('contato_endereco'),
-            'contato_email' => Config::getConfig('contato_email'),
-            'contato_telefone' => Config::getConfig('contato_telefone'),
-        );
-        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
-        return $renderer->render($response, "noticia.php", $data);
     }
 }

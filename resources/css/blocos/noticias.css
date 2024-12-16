@@ -97,6 +97,7 @@
 .noticias .conteudo .itens .item a .informacoes .descricao
 {
 	margin-bottom: 25px;
+	color: var(--color-white);
 }
 .noticias .conteudo .itens .item a .informacoes .btn
 {
