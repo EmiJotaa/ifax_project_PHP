@@ -12,11 +12,10 @@
 				<?php endif; ?>
 			</div>
 			<div class="listagem">
-				<div class="itens">
+				<div class="itens"> 
 					<h2 class="titulo center">Ultimas Notícias</h2>
 					<?php if (isset($data['informacoes']['listaNoticias'])): ?>
 					    <?php 
-					        // Ordenar as notícias pela data mais recente
 					        usort($data['informacoes']['listaNoticias'], function($a, $b) {
 					            return strtotime($b['data_cadastro']) - strtotime($a['data_cadastro']);
 					        });

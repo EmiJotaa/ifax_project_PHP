@@ -2,13 +2,13 @@
 	<div class="container">	
 		<div class="conteudo">
 			<div class="texto">
-				<h2 class="titulo center">Galeria do Projeto</h2>
+				<h2 class="titulo center">Galeria da Notícia</h2>
 				<div class="descricao center">
 					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 				</div>
 			</div>
 			<div class="itens">
-				<?php if (isset($data['informacoes']['listaProjetos'])): ?>
+				<?php if (isset($data['informacoes']['listaNoticias'])): ?>
 					<?php foreach ($data['informacoes']['listaGaleria'] as $galeria): ?>
 						<div class="item">
 							<a href="<?=URL_BASE.$galeria['caminho']?>" class="swipebox" title="Galeria do Projeto">

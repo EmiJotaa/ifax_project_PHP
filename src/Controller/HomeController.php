@@ -10,6 +10,8 @@ use App\Model\Noticia;
 use App\Model\Projeto;
 use App\Model\Foto;
 use App\Model\Video;
+use App\Model\Galeria;
+use App\Model\Galeria1;
 
 final class HomeController
 {
@@ -262,11 +264,15 @@ final class HomeController
         if ($noticiaDetalhe === null) {
             return $response->withHeader('Location', '/ifax/noticias')->withStatus(302);
         }
+
+        $galeria = new Galeria1();
+        $listaGaleria = $galeria->selectGaleria('*', array('id_noticia' => $noticiaDetalhe['id']));
         
         $data['informacoes'] = array(
             'titleHeader' => 'Noticias - Instituto da família do Alto Xingu',
             'listaNoticias' => $listaNoticias,
-            'noticiaDetalhe' => $noticiaDetalhe,
+            'listaGaleria' => $listaGaleria,
+            'noticiaDetalhe' => $noticiaDetalhe,            
             'title' => $noticiaDetalhe['titulo'] . ' - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
@@ -275,7 +281,7 @@ final class HomeController
                 ],
                 [
                     'link' => 'noticia/' . urlencode($noticiaDetalhe['url_amigavel']),
-                    'nome' => $noticiaDetalhe['titulo']
+                    'nome' => ' - ' .$noticiaDetalhe['titulo']
                 ]
             )
         );
@@ -298,17 +304,39 @@ final class HomeController
         ResponseInterface $response,
         $args
     ) {
+        $slug = $args['any'];
+        $projeto = new Projeto();
+        $listaProjetos = $projeto->selectProjeto('*', array('status' => 's'));
+
+        $projetoDetalhe = null;
+        foreach ($listaProjetos as $projetoItem) {
+            if ($projetoItem['url_amigavel'] == $slug) {
+                $projetoDetalhe = $projetoItem;
+                break; 
+            }
+        }
+
+        if ($projetoDetalhe === null) {
+            return $response->withHeader('Location', '/ifax/projetos')->withStatus(302);
+        }   
+
+        $galeria = new Galeria();
+        $listaGaleria = $galeria->selectGaleria('*', array('id_projeto' => $projetoDetalhe['id'])); 
+
         $data['informacoes'] = array(
             'titleHeader' => 'Projetos - Instituto da família do Alto Xingu',
-            'title' => 'Nome projeto - Instituto da família do Alto Xingu',
+            'listaProjetos' => $listaProjetos,
+            'listaGaleria' => $listaGaleria,
+            'projetoDetalhe' => $projetoDetalhe,
+            'title' => $projetoDetalhe['titulo'] .' - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'projetos',
                     'nome' => '- Projetos'
                 ],
                 [
-                    'link' => 'projetado',
-                    'nome' => '- Nome projeto'
+                    'link' => 'projeto/' . urlencode($projetoDetalhe['url_amigavel']),
+                    'nome' => ' - ' . $projetoDetalhe['titulo']
                 ]
             )
         );

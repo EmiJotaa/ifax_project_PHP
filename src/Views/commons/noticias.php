@@ -19,13 +19,13 @@
 								<div class="informacoes">
 									<p class="data"><?= date('d/m/Y', strtotime($noticia['data_cadastro']))?></p>						
 									<h3 class="titulo"><?=$noticia['titulo']?></h3>
-									<div class="descricao"><?=substr(strip_tags($noticia['descricao']), 0, 60) ?></div>
+									<div class="descricao"><?=substr(strip_tags($noticia['descricao']), 0, 120) ?></div>
 									<p class="btn">Ver Notícia</p>
 								</div>
 							</a>
 						</div> 
 					<?php endforeach ?> 
-				<?php endif ?>				
+				<?php endif ?>				 
 			</div>
 		</div>
 	</div>

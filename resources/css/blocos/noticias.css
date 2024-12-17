@@ -96,8 +96,8 @@
 }
 .noticias .conteudo .itens .item a .informacoes .descricao
 {
-	margin-bottom: 25px;
 	color: var(--color-white);
+	margin-bottom: 25px;
 }
 .noticias .conteudo .itens .item a .informacoes .btn
 {
