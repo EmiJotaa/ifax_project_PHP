@@ -12,7 +12,7 @@
 				<?php if (isset($data['informacoes']['listaProjetos'])): ?>
 					<?php foreach ($data['informacoes']['listaProjetos'] as $projeto): ?>
 						<div class="item">
-							<a href="<?=URL_BASE.$projeto['url_amigavel']?>">
+							<a href="<?=URL_BASE.'projeto/'.$projeto['url_amigavel']?>">
 								<div class="img">
 									<img src="<?=URL_BASE.$projeto['imagem_principal']?>">
 								</div>

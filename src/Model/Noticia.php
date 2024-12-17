@@ -9,6 +9,7 @@ class Noticia extends Model {
 	protected $fields = [
 		"id",
 		"titulo",
+		"autor",
 		"url_amigavel",
 		"descricao",
 		"imagem_principal",

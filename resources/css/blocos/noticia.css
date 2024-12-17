@@ -108,7 +108,7 @@
 }
 .listagem .itens .item a .informacoes .titulo
 {
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 22px;
 	font-family: var(--font-family);
 	margin-bottom: 25px;
@@ -122,6 +122,7 @@
 .listagem .itens .item a .informacoes .descricao
 {
 	margin-bottom: 25px;
+	color: var(--color-white);
 }
 .listagem .itens .item a .informacoes .btn
 {

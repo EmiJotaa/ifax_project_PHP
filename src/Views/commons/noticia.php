@@ -2,85 +2,42 @@
 	<div class="container">
 		<div class="conteudo">
 			<div class="noticia-detalhe">
-				<h2 class="titulo">Nome da Notícia</h2>
-				<p class="data">01/01/2024 - Por: Marco Júnior</p>
-				<img src="<?=URL_BASE?>resources/imagens/banner3.png">
+				<?php if (isset($data['informacoes']['noticiaDetalhe'])): ?>
+				<h2 class="titulo"><?= $informacoes['noticiaDetalhe']['titulo'] ?></h2>
+				<p class="data"><?= date('d/m/Y', strtotime($informacoes['noticiaDetalhe']['data_cadastro'])) ?> - Por: <?= $informacoes['noticiaDetalhe']['autor'] ?></p>
+				<img src="<?= URL_BASE . $informacoes['noticiaDetalhe']['imagem_principal'] ?>">
 				<div class="descricao">
-					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.</p> 
-
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur.</p>
-
-					<ul>
-						<li>-cillum dolore eu fugiat nulla pariatur.</li>
-						<li>-cillum dolore eu fugiat nulla pariatur.</li>
-						<li>-cillum dolore eu fugiat nulla pariatur.</li>
-						<li>-cillum dolore eu fugiat nulla pariatur.</li>
-						<li>-cillum dolore eu fugiat nulla pariatur.</li>
-					</ul>
-
-					<p>Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-
-					<p>Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-
-					<p>Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<?= $informacoes['noticiaDetalhe']['descricao'] ?>
 				</div>
+				<?php endif; ?>
 			</div>
 			<div class="listagem">
 				<div class="itens">
 					<h2 class="titulo center">Ultimas Notícias</h2>
-					<div class="item">
-						<a href="#">
-							<div class="img">
-								<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-							</div>
-							<div class="informacoes">
-								<p class="data">22/08/2024</p>						
-								<h3 class="titulo">Aqui vem o titulo</h3>
-								<p class="btn">Ver notícia</p>
-							</div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<div class="img">
-								<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-							</div>
-							<div class="informacoes">
-								<p class="data">22/08/2024</p>						
-								<h3 class="titulo">Aqui vem o titulo </h3>
-								<p class="btn">Ver notícia</p>
-							</div>
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<div class="img">
-								<img src="<?=URL_BASE?>resources/imagens/brigadista.png">
-							</div>
-							<div class="informacoes">
-								<p class="data">22/08/2024</p>						
-								<h3 class="titulo">Aqui vem o titulo</h3>
-								<p class="btn">Ver notícia</p>
-							</div>
-						</a>
-					</div>	
+					<?php if (isset($data['informacoes']['listaNoticias'])): ?>
+					    <?php 
+					        // Ordenar as notícias pela data mais recente
+					        usort($data['informacoes']['listaNoticias'], function($a, $b) {
+					            return strtotime($b['data_cadastro']) - strtotime($a['data_cadastro']);
+					        });
+					        $noticias = array_slice($data['informacoes']['listaNoticias'], 0, 3);
+					    ?>
+					    <?php foreach ($noticias as $noticia): ?>
+					        <div class="item">
+					            <a href="<?= URL_BASE .'noticia/'. $noticia['url_amigavel'] ?>">
+					                <div class="img">
+					                    <img src="<?= URL_BASE . $noticia['imagem_principal'] ?>">
+					                </div>
+					                <div class="informacoes">
+					                    <p class="data"><?= date('d/m/Y', strtotime($noticia['data_cadastro'])) ?></p>
+					                    <h3 class="titulo"><?= $noticia['titulo'] ?></h3>
+					                    <div class="descricao"><?= substr(strip_tags($noticia['descricao']), 0, 120) ?></div>
+					                    <p class="btn">Ver Notícia</p>
+					                </div>
+					            </a>
+					        </div> 
+					    <?php endforeach; ?> 
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

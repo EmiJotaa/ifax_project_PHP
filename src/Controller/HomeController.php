@@ -248,21 +248,34 @@ final class HomeController
         ResponseInterface $response,
         $args
     ) {
+        $slug = $args['any'];
         $noticia = new Noticia();
         $listaNoticias = $noticia->selectNoticia('*', array('status' => 's'));
 
+        $noticiaDetalhe = null;
+        foreach ($listaNoticias as $noticiaItem) {
+            if ($noticiaItem['url_amigavel'] == $slug) {
+                $noticiaDetalhe = $noticiaItem;
+                break; 
+            }
+        }
+        if ($noticiaDetalhe === null) {
+            return $response->withHeader('Location', '/ifax/noticias')->withStatus(302);
+        }
+        
         $data['informacoes'] = array(
             'titleHeader' => 'Noticias - Instituto da família do Alto Xingu',
             'listaNoticias' => $listaNoticias,
-            'title' => 'Nome noticia - Instituto da família do Alto Xingu',
+            'noticiaDetalhe' => $noticiaDetalhe,
+            'title' => $noticiaDetalhe['titulo'] . ' - Instituto da família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'noticias',
-                    'nome' => '- Noticias'
+                    'nome' => '- Noticia'
                 ],
                 [
-                    'link' => 'projetado',
-                    'nome' => '- Nome noticia'
+                    'link' => 'noticia/' . urlencode($noticiaDetalhe['url_amigavel']),
+                    'nome' => $noticiaDetalhe['titulo']
                 ]
             )
         );

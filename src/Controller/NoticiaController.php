@@ -161,6 +161,7 @@ final class NoticiaController
      
         $campos = array(
             'titulo' => $posts['titulo'],
+            'autor' => $posts['autor'],
             'url_amigavel' => $this->gerarUrlAmigavel($posts['titulo']),
             'descricao' => $posts['descricao'],
             'imagem_principal' => $nome_imagem_principal,
@@ -261,6 +262,7 @@ final class NoticiaController
      
         $valores = array(
             'titulo' => $posts['titulo'],
+            'autor' => $posts['autor'],
             'url_amigavel' => $this->gerarUrlAmigavel($posts['titulo']),
             'descricao' => $posts['descricao'],
             'data_cadastro' => $posts['data'],

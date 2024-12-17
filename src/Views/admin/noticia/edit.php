@@ -17,6 +17,10 @@
 							<input type="date" name="data" value="<?=explode(" ", $data['informacoes']['noticia'][0]['data_cadastro'])[0]?>" required>
 						</div>
 						<div class="campo">
+							<label>Autor*</label>
+							<input type="text" name="autor" value="<?=$data['informacoes']['noticia'][0]['autor']?>" required>
+						</div>
+						<div class="campo">
 							<label>Descrição*</label>
 							<textarea name="descricao" id="descricao" required><?=$data['informacoes']['noticia'][0]['descricao']?></textarea>
 						</div>

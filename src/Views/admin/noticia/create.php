@@ -17,6 +17,10 @@
 							<input type="date" name="data" required>
 						</div>
 						<div class="campo">
+							<label>Autor*</label>
+							<input type="text" name="autor" required>
+						</div>
+						<div class="campo">
 							<label>Descrição*</label>
 							<textarea name="descricao" id="descricao" required></textarea>
 						</div>
