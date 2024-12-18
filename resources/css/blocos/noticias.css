@@ -13,12 +13,6 @@
 {
 	max-width: 1490px;
 }
-.noticias .conteudo .texto .descicao
-{
-	max-width: 690px;
-	display: block;
-	margin: 0 auto 25px;
-}
 .noticias .conteudo .itens
 {
 	width: 100%;
@@ -83,9 +77,8 @@
 }
 .noticias .conteudo .itens .item a .informacoes .titulo
 {
-	font-size: 20px;
-	line-height: 22px;
-	font-family: var(--font-family);
+	font-size: 25px;
+	line-height: 25px;
 	margin-bottom: 25px;
 	color: var(--color-white);
 }
@@ -103,7 +96,7 @@
 {
 	font-size: 20px;
 	color: var(--color-destaque);
-	font-family: var(--font-family);
+	font-family: var(--font-family-);
 	padding: 0px;
 	background-color: transparent;
 	margin: 0;

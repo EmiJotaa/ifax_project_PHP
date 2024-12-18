@@ -10,12 +10,6 @@
 {
 	max-width: 1490px;
 }
-.projetos .conteudo .texto .descicao
-{
-	max-width: 690px;
-	display: block;
-	margin: 0 auto 25px;
-}
 .projetos .conteudo .itens
 {
 	width: 100%;
@@ -80,9 +74,8 @@
 }
 .projetos .conteudo .itens .item a .informacoes .titulo
 {
-	font-size: 20px;
-	line-height: 22px;
-	font-family: var(--font-family);
+	font-size: 25px;
+	line-height: 25px;
 	margin-bottom: 25px;
 	color: var(--color-white);
 }

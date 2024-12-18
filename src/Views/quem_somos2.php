@@ -20,7 +20,7 @@
 						<img src="<?=URL_BASE?>resources/imagens/missao.png">
 					</div>
 					<div class="info">
-						<h3>Missão</h3>
+						<h3 class="titulo">Missão</h3>
 						<p>Proporcionar experiências sonoras de alta qualidade, garantindo satisfação e excelência em serviços de som automotivo e assistência técnica especializada.</p>
 					</div>
 				</div>
@@ -29,7 +29,7 @@
 						<img src="<?=URL_BASE?>resources/imagens/visao.png">
 					</div>
 					<div class="info">
-						<h3>Visão</h3>
+						<h3 class="titulo">Visão</h3>
 						<p>Ser a referência em som automotivo e assistência técnica em Brasília, oferecendo soluções inovadoras e confiáveis que superem as expectativas dos clientes.</p>
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 						<img src="<?=URL_BASE?>resources/imagens/valores.png">
 					</div>
 					<div class="info">
-						<h3>Valores</h3>
+						<h3 class="titulo">Valores</h3>
 						<p>Qualidade, Inovação, Confiança, Atendimento Personalizado e Sustentabilidade.</p>
 					</div>
 				</div>
