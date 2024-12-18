@@ -3,10 +3,6 @@
 		<div class="conteudo">
 			<div class="texto">
 				<h2 class="titulo center">Notícias</h2>
-				<div class="descricao center">
-					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
 			</div>
 			<div class="itens">
 				<?php if (isset($data['informacoes']['listaNoticias'])): ?>

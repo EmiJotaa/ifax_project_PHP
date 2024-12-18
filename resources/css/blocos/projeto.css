@@ -2,11 +2,8 @@
 	width: 100%;
 	display: block;
 	padding: 80px 0;
-	border-top: 50px solid transparent;
+	border-top: 40px solid transparent;
     border-image: url('../../imagens/pintura.png') 25 round;
-    background-image: url('../../imagens/flores.jpg');
-	background-position: right;
-	background-size: cover;
 }
 .projeto .conteudo{
 	width: 100%;

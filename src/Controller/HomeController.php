@@ -353,4 +353,34 @@ final class HomeController
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
         return $renderer->render($response, "projeto.php", $data);
     }
+
+    public function mensagem_recebida(
+        ServerRequestInterface $request, 
+        ResponseInterface $response,
+        $args
+    ) {
+
+        $data['informacoes'] = array(
+            'titleHeader' => 'Mensagem Recebida - Instituto da família do Alto Xingu',
+            'title' => 'Mensagem Recebida - Instituto da família do Alto Xingu',
+            'caminho' => array(
+                [
+                    'link' => 'mensagem-recebida',
+                    'nome' => '- Mensagem Recebida'
+                ]
+            )
+        );
+        $data['config'] = array(
+            'logo' => Config::getConfig('logo'),
+            'nome_site' => Config::getConfig('nome_site'),
+            'rede_social_youtube' => Config::getConfig('rede_social_youtube'),
+            'rede_social_instagram' => Config::getConfig('rede_social_instagram'),
+            'rede_social_facebook' => Config::getConfig('rede_social_facebook'),
+            'contato_endereco' => Config::getConfig('contato_endereco'),
+            'contato_email' => Config::getConfig('contato_email'),
+            'contato_telefone' => Config::getConfig('contato_telefone'),
+        );
+        $renderer = new PhpRenderer(DIRETORIO_TEMPLATES);
+        return $renderer->render($response, "mensagem_recebida.php", $data);
+    }
 }

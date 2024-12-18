@@ -103,7 +103,7 @@
     <script src="<?=URL_BASE?>resources/js/jquery/jquery.min.js"></script>
     <script src="<?=URL_BASE?>resources/js/slick.min.js"></script>
     <script src="<?=URL_BASE?>resources/js/jquery.swipebox.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lc88pkqAAAAADxgwUiMVwRzYn5rt0ttgtoF1TTw"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfIgZ8qAAAAABbnHbfvf96QDqB0RfsbsgoLx_sm"></script>
 	<script src="<?=URL_BASE?>resources/js/js.js"></script>
 </body>
 </html>

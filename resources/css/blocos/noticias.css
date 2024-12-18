@@ -6,7 +6,7 @@
 	background-image: url('../../imagens/flores.jpg');
 	background-position: left;
 	background-size: cover;
-	border-top: 50px solid transparent;
+	border-top: 40px solid transparent;
     border-image: url('../../imagens/pintura.png') 25 round;
 }
 .noticias .container
@@ -113,4 +113,25 @@
 
 .noticias .conteudo .itens .item a:hover .informacoes .btn{
 	color: rgba(79, 255, 40, 1);
+}
+
+.noticias .conteudo .itens .slick-arrow
+{
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 20px);
+	font-size: 30px;
+}
+.noticias .conteudo .itens .slick-arrow i:before
+{
+	color: var(--color-white);
+}
+.noticias .conteudo .itens .slick-arrow.slick-prev
+{
+	left: 10px;
+
+}
+.noticias .conteudo .itens .slick-arrow.slick-next
+{
+	right: 10px;
 }

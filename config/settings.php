@@ -15,3 +15,5 @@ define('SQL_DB_SERVER', 'localhost');
 define('SQL_DB_USER', 'root');
 define('SQL_DB_PASS', '');
 define('SQL_DB_DATABASE', 'local_ifax');
+
+//u730418050_

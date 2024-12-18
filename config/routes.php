@@ -74,6 +74,7 @@ return function (App $app) {
     $app->get('/projetos', '\App\Controller\HomeController:projetos');
     $app->get('/midias', '\App\Controller\HomeController:midias');
     $app->get('/fale-conosco', '\App\Controller\HomeController:fale_conosco');
+    $app->get('/mensagem-recebida', '\App\Controller\HomeController:mensagem_recebida');
     $app->get('/noticia/{any}', '\App\Controller\HomeController:noticia_detalhe');
     $app->get('/projeto/{any}', '\App\Controller\HomeController:projeto_detalhe');
 };

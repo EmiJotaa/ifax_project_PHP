@@ -3,7 +3,7 @@
 	width: 100%;
 	display: block;
 	padding: 40px 0px 80px 0px;
-	border-top: 50px solid transparent;
+	border-top: 40px solid transparent;
     border-image: url('../../imagens/pintura.png') 25 round;
 }
 .projetos .container
@@ -110,4 +110,29 @@
 
 .projetos .conteudo .itens .item a:hover .informacoes .btn{
 	color: rgba(79, 255, 40, 1);
+}
+
+.projetos .conteudo .itens .item a:hover .informacoes .btn{
+	color: rgba(79, 255, 40, 1);
+}
+
+.projetos .conteudo .itens .slick-arrow
+{
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 20px);
+	font-size: 30px;
+}
+.projetos .conteudo .itens .slick-arrow i:before
+{
+	color: var(--color-destaque);
+}
+.projetos .conteudo .itens .slick-arrow.slick-prev
+{
+	left: 10px;
+
+}
+.projetos .conteudo .itens .slick-arrow.slick-next
+{
+	right: 10px;
 }

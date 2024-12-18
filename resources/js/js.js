@@ -20,7 +20,9 @@ $(document).ready(function(){
 
 	$('.noticias .conteudo .itens').slick({
 	  dots: true,
-	  arrows: false,
+	  arrows: true,
+	  prevArrow: '<a class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></a>',
+  	nextArrow: '<a class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></a>',
 	  autoplay: false,
 	  autoplaySpeed: 5000,
 	  infinite: true,
@@ -50,7 +52,9 @@ $(document).ready(function(){
 	});
 		$('.projetos .conteudo .itens').slick({
 	  dots: true,
-	  arrows: false,
+	  arrows: true,
+	  prevArrow: '<a class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></a>',
+  	nextArrow: '<a class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></a>',
 	  autoplay: false,
 	  autoplaySpeed: 5000,
 	  infinite: true,
@@ -81,7 +85,9 @@ $(document).ready(function(){
 
 	$('.videos .conteudo .itens').slick({
 	  dots: true,
-	  arrows: false,
+	  arrows: true,
+	  prevArrow: '<a class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></a>',
+  	nextArrow: '<a class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></a>',
 	  autoplay: true,
 	  autoplaySpeed: 5000,
 	  infinite: true,
@@ -112,7 +118,9 @@ $(document).ready(function(){
 
 	$('.fotos .conteudo .itens').slick({
 	  dots: true,
-	  arrows: false,
+	  arrows: true,
+	  prevArrow: '<a class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></a>',
+  	nextArrow: '<a class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></a>',
 	  autoplay: true,
 	  autoplaySpeed: 5000,
 	  infinite: true,
@@ -143,7 +151,9 @@ $(document).ready(function(){
 
 	$('.galery .conteudo .itens').slick({
 	  dots: true,
-	  arrows: false,
+	  arrows: true,
+	  prevArrow: '<a class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></a>',
+  	nextArrow: '<a class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></a>',
 	  autoplay: true,
 	  autoplaySpeed: 5000,
 	  infinite: true,

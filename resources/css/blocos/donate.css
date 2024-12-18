@@ -7,7 +7,7 @@
 	background-image: url('../../imagens/flores.jpg');
 	background-position: right;
 	background-size: cover;	
-	border-top: 50px solid transparent;
+	border-top: 40px solid transparent;
     border-image: url('../../imagens/pintura.png') 25 round;
 }
 .donate .container {

@@ -7,7 +7,7 @@
 	align-items: center;
 	position: relative;
 	overflow: hidden;
-	border-top: 50px solid transparent;
+	border-top: 40px solid transparent;
     border-image: url('../../imagens/pintura.png') 25 round;
 }
 .call_to_action .conteudo

@@ -3,9 +3,6 @@
 		<div class="conteudo">
 			<div class="texto">
 				<h2 class="titulo center">Fotos</h2>
-				<div class="descricao center">
-					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-				</div>
 			</div>
 			<div class="itens">
 				<?php if (isset($data['informacoes']['listaFotos'])): ?>
