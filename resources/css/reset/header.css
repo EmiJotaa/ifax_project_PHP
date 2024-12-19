@@ -121,12 +121,11 @@ header .conteudo .menu nav a{
 	padding: 13px 0px;
 	font-family: var(--font-family);
 	transition: .4s;
-	font-size: 20px;
+	font-size: 25px;
 	padding: 10px;
 	border-radius: 50px;
 	margin: 3px 0;
 }
-
 header .conteudo .menu nav a:hover{
 	background-color: rgba(91,54,13,1);;
 	color: rgba(79, 255, 40, 1);
@@ -136,15 +135,19 @@ header .conteudo .menu a i{
 }
 header .conteudo .menu.active .btn-nav
 {
-	position: absolute;
+	position: fixed;
 	z-index: 4;
 	transform: translateY(-30PX) translateX(-40px);
-	transition: .30s;
+	transition: .4s;
 }
 @media only screen and (min-height: 750px){
 	header .conteudo .menu nav a{
 		font-size: 30px;
 	}
+	header .conteudo .menu nav a:last-child{
+		margin-bottom: 50px;
+	}
+
 }
 @media only screen and (min-width: 768px)
 {
@@ -222,7 +225,11 @@ header .conteudo .menu.active .btn-nav
 	header .conteudo .menu nav a{
 		font-size: 20px;
 	}
+	header .conteudo .menu nav a:last-child{
+		margin: 0;
+	}
 	header .conteudo .menu a.btn-nav
 	{
 		display: none;
 	}
+}

@@ -2,8 +2,8 @@ footer
 {
 	width: 100%;
 	display: block;
-	background-image: url('../../imagens/flores2.png');
-	background-position: bottom;
+	background-image: url('../../imagens/flores-vertical.png');
+	background-position: right;
 	background-size: cover;
 	padding-top: 30px;
 	border-top: 40px solid transparent;
@@ -80,7 +80,7 @@ footer .principal .conteudo .logo .redes-sociais a
 }
 footer .principal .conteudo .logo .redes-sociais  a i
 {
-	font-size: 25px;
+	font-size: 30px;
 	transition: .4s;
 }
 footer .principal .conteudo .logo .redes-sociais  a:hover i{
@@ -105,6 +105,7 @@ footer .principal .conteudo .menu nav
 }
 footer .principal .conteudo .menu nav a
 {
+	font-size: 25px;
 	margin-bottom: 28px;
 	transition: .4s;
 }
@@ -183,7 +184,12 @@ footer .copyright .conteudo p
 	font-family: var(--font-family);
 }
 @media only screen and (min-width:769px)
-{
+{	
+	footer{
+		background-image: url('../../imagens/flores2.png');
+		background-position: bottom;
+		background-size: cover;
+	}
 	footer .principal .conteudo .logo,
 	footer .principal .conteudo .menu,
 	footer .principal .conteudo .contatos

@@ -46,7 +46,7 @@ final class FotoController
         }
  
         $data['informacoes'] = array(
-            'titleHeader' => 'Fotos - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Fotos - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'fotos',
             'listagem' => $listaFotos,
             'paginaAtual' => $paginaAtual,
@@ -68,7 +68,7 @@ final class FotoController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Nova Foto - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Nova Foto - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'fotos'
         );
 
@@ -88,7 +88,7 @@ final class FotoController
         $fotoSelecionado = $foto->selectFoto('*', array('id' => $args['id']));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Editar Foto - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Editar Foto - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'fotos',
             'foto' => $fotoSelecionado,
         );

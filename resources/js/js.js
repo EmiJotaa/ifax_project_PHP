@@ -188,7 +188,7 @@ $(document).ready(function(){
       function onClick(e) {
         e.preventDefault();
         grecaptcha.ready(function() {
-          grecaptcha.execute('6Lc88pkqAAAAADxgwUiMVwRzYn5rt0ttgtoF1TTw', {action: 'submit'}).then(function(token) {
+          grecaptcha.execute('6Lc2ZqAqAAAAAMMZzHehIFA4elAOxPpgXErL4VGr', {action: 'submit'}).then(function(token) {
           });
         });
       }

@@ -25,7 +25,7 @@ final class AdminController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'dashboard'
         );
 
@@ -41,7 +41,7 @@ final class AdminController
         Usuario::verifica_login(true);
         
         $data['informacoes'] = array(
-            'titleHeader' => 'Login - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Login - Instituto da Família do Alto Xingu',
         );
 
         $renderer = new PhpRenderer(DIRETORIO_TEMPLATES_ADMIN);
@@ -118,7 +118,7 @@ final class AdminController
         }
  
         $data['informacoes'] = array(
-            'titleHeader' => 'Usuarios - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Usuarios - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'usuarios',
             'listagem' => $listaUsuarios,
             'paginaAtual' => $paginaAtual,
@@ -140,7 +140,7 @@ final class AdminController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Novo Usuario - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Novo Usuario - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'usuarios'
         );
 
@@ -162,7 +162,7 @@ final class AdminController
         $galeriaFotos = $usuario->selectGaleriaUsuario('*', array('id_usuario' => $args['id']));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Editar Usuario - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Editar Usuario - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'usuarios',
             'usuario' => $usuarioSelecionado,
         );

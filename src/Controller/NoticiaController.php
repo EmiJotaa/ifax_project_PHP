@@ -46,7 +46,7 @@ final class NoticiaController
         }
  
         $data['informacoes'] = array(
-            'titleHeader' => 'Notícias - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Notícias - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'noticias',
             'listagem' => $listaNoticias,
             'paginaAtual' => $paginaAtual,
@@ -68,7 +68,7 @@ final class NoticiaController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Nova Notícia - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Nova Notícia - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'noticias'
         );
 
@@ -90,7 +90,7 @@ final class NoticiaController
         $galeriaFotos = $noticia->selectGaleriaNoticia('*', array('id_noticia' => $args['id']));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Editar Noticia - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Editar Noticia - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'noticias',
             'noticia' => $noticiaSelecionado,
             'galeria' => $galeriaFotos

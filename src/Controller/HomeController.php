@@ -34,7 +34,7 @@ final class HomeController
         $listaVideos = $video->selectVideo('*', array('status' => 's'));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Instituto da família do Alto Xingu',
+            'titleHeader' => 'Instituto da Família do Alto Xingu',
             'listaNoticias' => $listaNoticias,
             'listaProjetos' => $listaProjetos,
             'listaFotos' => $listaFotos,
@@ -61,8 +61,8 @@ final class HomeController
         $args
     ) {
         $data['informacoes'] = array(
-            'titleHeader' => 'Quem Somos - Instituto da família do Alto Xingu',
-            'title' => 'Quem Somos - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Quem Somos - Instituto da Família do Alto Xingu',
+            'title' => 'Quem Somos - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'quem-somos',
@@ -93,9 +93,9 @@ final class HomeController
         $listaNoticias = $noticia->selectNoticia('*', array('status' => 's'));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Notícias - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Notícias - Instituto da Família do Alto Xingu',
             'listaNoticias' => $listaNoticias,
-            'title' => 'Notícias - Instituto da família do Alto Xingu',
+            'title' => 'Notícias - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'noticias',
@@ -123,8 +123,8 @@ final class HomeController
         $args
     ) {
         $data['informacoes'] = array(
-            'titleHeader' => 'Faça uma doação - Instituto da família do Alto Xingu',
-            'title' => 'Faça uma doação - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Faça uma doação - Instituto da Família do Alto Xingu',
+            'title' => 'Faça uma doação - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'donate',
@@ -155,9 +155,9 @@ final class HomeController
         $listaProjetos = $projeto->selectProjeto('*', array('status' => 's'));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Projetos - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Projetos - Instituto da Família do Alto Xingu',
             'listaProjetos' => $listaProjetos,
-            'title' => 'Projetos - Instituto da família do Alto Xingu',
+            'title' => 'Projetos - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'projetos',
@@ -191,13 +191,13 @@ final class HomeController
         $listaVideos = $video->selectVideo('*', array('status' => 's'));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Galeria - Instituto da família do Alto Xingu ',
+            'titleHeader' => 'Galeria - Instituto da Família do Alto Xingu ',
             'listaFotos' => $listaFotos,
             'listaVideos' => $listaVideos,
-            'title' => 'Galeria - Instituto da família do Alto Xingu',
+            'title' => 'Galeria - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
-                    'link' => 'galeria',
+                    'link' => 'midias',
                     'nome' => '- Galeria'
                 ]
             )
@@ -222,8 +222,8 @@ final class HomeController
         $args
     ) {
         $data['informacoes'] = array(
-            'titleHeader' => 'Fale Conosco - Instituto da família do Alto Xingu',
-            'title' => 'Fale Conosco - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Fale Conosco - Instituto da Família do Alto Xingu',
+            'title' => 'Fale Conosco - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'fale-conosco',
@@ -269,11 +269,11 @@ final class HomeController
         $listaGaleria = $galeria->selectGaleria('*', array('id_noticia' => $noticiaDetalhe['id']));
         
         $data['informacoes'] = array(
-            'titleHeader' => 'Noticias - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Noticias - Instituto da Família do Alto Xingu',
             'listaNoticias' => $listaNoticias,
             'listaGaleria' => $listaGaleria,
             'noticiaDetalhe' => $noticiaDetalhe,            
-            'title' => $noticiaDetalhe['titulo'] . ' - Instituto da família do Alto Xingu',
+            'title' => $noticiaDetalhe['titulo'] . ' - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'noticias',
@@ -324,11 +324,11 @@ final class HomeController
         $listaGaleria = $galeria->selectGaleria('*', array('id_projeto' => $projetoDetalhe['id'])); 
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Projetos - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Projetos - Instituto da Família do Alto Xingu',
             'listaProjetos' => $listaProjetos,
             'listaGaleria' => $listaGaleria,
             'projetoDetalhe' => $projetoDetalhe,
-            'title' => $projetoDetalhe['titulo'] .' - Instituto da família do Alto Xingu',
+            'title' => $projetoDetalhe['titulo'] .' - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'projetos',
@@ -361,8 +361,8 @@ final class HomeController
     ) {
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Mensagem Recebida - Instituto da família do Alto Xingu',
-            'title' => 'Mensagem Recebida - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Mensagem Recebida - Instituto da Família do Alto Xingu',
+            'title' => 'Mensagem Recebida - Instituto da Família do Alto Xingu',
             'caminho' => array(
                 [
                     'link' => 'mensagem-recebida',

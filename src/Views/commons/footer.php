@@ -4,7 +4,7 @@
 				<div class="conteudo">
 					<div class="logo">
 						<a href="<?=URL_BASE?>">
-                        	<img src="<?=URL_BASE?>resources/imagens/logo.png">
+                        	<img src="<?=URL_BASE.$data['config']['logo']?>">
                     	</a>
                     	<p class="descricao">Desde 2020, a IFAX atua no apoio de formação dos brigadistas indígenas e na conscientização das aldeias xinguanas quanto ao manejo do fogo e prevenção de incêndios.</p>
                     	<div class="redes-sociais">
@@ -29,25 +29,25 @@
                     	<h3 class="titulo">Institucional</h3>
                     	<nav>
                     		<a href="<?=URL_BASE?>">
-                    			<i class="fas fa-chevron-right"></i>Home               				
+                    			<i class="fas fa-chevron-right"></i>  Home               				
                     		</a>
                     		<a href="<?=URL_BASE?>quem-somos">
-                    			<i class="fas fa-chevron-right"></i>Quem Somos  				
+                    			<i class="fas fa-chevron-right"></i>  Quem Somos  				
                     		</a>
                     		<a href="<?=URL_BASE?>noticias">
-                    			<i class="fas fa-chevron-right"></i>Notícias  				
+                    			<i class="fas fa-chevron-right"></i>  Notícias  				
                     		</a>
                     		<a href="<?=URL_BASE?>donate">
-                    			<i class="fas fa-chevron-right"></i>Fazer uma Doação     			
+                    			<i class="fas fa-chevron-right"></i>  Fazer uma Doação     			
                     		</a>
                     		<a href="<?=URL_BASE?>projetos">
-                    			<i class="fas fa-chevron-right"></i>Projetos     			
+                    			<i class="fas fa-chevron-right"></i>  Projetos     			
                     		</a>
                     		<a href="<?=URL_BASE?>midias">
-                    			<i class="fas fa-chevron-right"></i>Galeria          				
+                    			<i class="fas fa-chevron-right"></i>  Galeria          				
                     		</a>
                     		<a href="<?=URL_BASE?>fale-conosco">
-                    			<i class="fas fa-chevron-right"></i>Fale Conosco	
+                    			<i class="fas fa-chevron-right"></i>  Fale Conosco	
                     		</a>
                     		
                     	</nav>
@@ -103,7 +103,7 @@
     <script src="<?=URL_BASE?>resources/js/jquery/jquery.min.js"></script>
     <script src="<?=URL_BASE?>resources/js/slick.min.js"></script>
     <script src="<?=URL_BASE?>resources/js/jquery.swipebox.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfIgZ8qAAAAABbnHbfvf96QDqB0RfsbsgoLx_sm"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc2ZqAqAAAAAMMZzHehIFA4elAOxPpgXErL4VGr"></script>
 	<script src="<?=URL_BASE?>resources/js/js.js"></script>
 </body>
 </html>

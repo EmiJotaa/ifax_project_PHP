@@ -4,8 +4,8 @@
 			<div class="texto">
 				<h2 class="titulo">Quem somos</h2>
 				<div class="descricao">
-					<p>Com as mudanças climáticas e a seca extrema, o Território Indígena do Xingu tem sofrido com diversos focos de incêndio no ano de 2024. Sem o combate efetivo e rápido, os incêndios se espalham pela vegetação seca e alcançam enormes proporções, ameaçando a biodiversidade da fauna e flora e, até mesmo, as aldeias dos povos indígenas que vivem na região.</p>
-					<p>Recentemente, incêndios avançaram descontroladamente e atingiram aldeias dos povos Kalapalo, Aweti e Yawalapíti, na região do Alto Xingu. Por sorte, não houve vítimas, mas os prejuízos são grandes, já que além das casas tradicionais de sapê, roças foram destruídas, prejudicando a subsistência alimentar de diversas famílias.</p>
+					<p>Fundado em 2021, o Instituto da Família do Alto Xingu (IFAX) tem como objetivo social a transformação da sociedade, focando na promoção da qualidade de vida em suas diferentes dimensões, com ênfase na educação, ampliação das liberdades, aprofundamento da justiça social e da sustentabilidade, com a promoção das atividades e finalidades de relevância pública e social nas áreas de cultura, arte, educação, comunicação, assistência social, meio ambiente e economia solidária.</p>
+					<p>Exclusivo para membros indígenas, o Instituto da Família do Alto Xingu (IFAX) tem como meta desenvolver projetos voltados à proteção dos direitos e à sustentabilidade dos povos indígenas que habitam a região do Alto Xingu.</p>
 				</div>
 				<a href="<?=URL_BASE?>quem-somos" class="btn">Continue lendo</a>
 			</div>

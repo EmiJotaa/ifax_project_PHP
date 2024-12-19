@@ -21,10 +21,10 @@
     <meta property="og:image" content="" />
     <meta property="og:image:alt" content="" />
 
-    <link rel="icon" href="" type="image/x-icon">
-    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="icon" href="<?=URL_BASE?>resources/imagens/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?=URL_BASE?>resources/imagens/logo.png" type="image/x-icon" />
 
-    <title>Instituto da família do Alto Xingu</title>
+    <title>Instituto da Família do Alto Xingu</title>
 
     <link href="<?=URL_BASE?>resources/css/slick.css?" rel="stylesheet"/>
     <link href="<?=URL_BASE?>resources/css/swipebox.css?" rel="stylesheet"/>

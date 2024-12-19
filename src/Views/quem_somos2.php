@@ -6,12 +6,14 @@
 		<div class="conteudo">
 			<div class="texto">
 				<h2 class="titulo">Quem somos</h2>
-				<div class="descricao-visivel">
-					<p>Desde 1989, a Eletrônica Marquinho é a referência em som automotivo em Brasília. Com mais de 30 anos de experiência no mercado, somos especializados em sistemas de áudio automotivo, oferecendo uma ampla variedade de serviços, desde a instalação de alto-falantes e amplificadores até ajustes completos de som e acessórios. Nosso compromisso é proporcionar qualidade e excelência em cada atendimento, garantindo que você desfrute de um som impecável enquanto dirige.</p>
+				<div class="descricao">
+					<p>Fundado em 2021, o Instituto da Família do Alto Xingu (IFAX) tem como objetivo social a transformação da sociedade, focando na promoção da qualidade de vida em suas diferentes dimensões, com ênfase na educação, ampliação das liberdades, aprofundamento da justiça social e da sustentabilidade, com a promoção das atividades e finalidades de relevância pública e social nas áreas de cultura, arte, educação, comunicação, assistência social, meio ambiente e economia solidária.</p>
 
-					<p>Orgulhosamente, somos assistência técnica autorizada das marcas Wings e Roadstar, atendendo com exclusividade os equipamentos dessas marcas reconhecidas. Nossa equipe altamente treinada segue os mais rigorosos padrões de qualidade, usando peças originais e técnicas especializadas para garantir que o seu sistema de som automotivo funcione com o máximo desempenho e durabilidade. Com tecnologia de ponta e diagnósticos precisos, entregamos resultados que superam as expectativas dos nossos clientes.</p>
+					<p>Exclusivo para membros indígenas, o Instituto da Família do Alto Xingu (IFAX) tem como meta desenvolver projetos voltados à proteção dos direitos e à sustentabilidade dos povos indígenas que habitam a região do Alto Xingu. Nesse sentido, desenvolve ações de conservação e proteção ambiental, educação, cultura, pesquisa, agricultura familiar e geração de renda para as famílias indígenas.</p>
 
-					<p>Na Eletrônica Marquinho, acreditamos que um bom sistema de som é essencial para o conforto e prazer de quem está ao volante. Nosso atendimento personalizado, aliado ao conhecimento profundo dos produtos e tendências do mercado, faz com que cada instalação seja única. Venha conhecer nossa loja e descubra como podemos transformar a experiência sonora do seu veículo com inovação e profissionalismo incomparáveis!</p>
+					<p>Em 2020, membros da associação criaram uma brigada indígena voluntária Kuikuro para combater os incêndios no Alto Xingu e nas comunidades próximas. Também criaram ações de prevenção à Covid-19 e apoio à segurança alimentar.</p>
+
+					<p>Os membros da associação participam do Coletivo Kuikuro de Cinema e da Associação Indígena Kuikuro do Alto Xingu (AIKAX). Também participam ativamente de encontros com outras organizações locais e não-governamentais que atuam na região, como Instituto Socioambiental (ISA), Associação Terra Indígena do Xingu (ATIX), Movimento das Mulheres indígenas do Território do Xingu (MMTIX), Instituto Aritana e Confederação Nacional de Agricultores e Empreendedores Familiares (CONAFER).</p>
 				</div>
 			</div>
 			<div class="itens">
@@ -21,7 +23,7 @@
 					</div>
 					<div class="info">
 						<h3 class="titulo">Missão</h3>
-						<p>Proporcionar experiências sonoras de alta qualidade, garantindo satisfação e excelência em serviços de som automotivo e assistência técnica especializada.</p>
+						<p>Promover a transformação social, focando em qualidade de vida, educação, justiça social, sustentabilidade e direitos indígenas, com ações nas áreas de cultura, arte, meio ambiente e economia solidária.</p>
 					</div>
 				</div>
 				<div class="item">
@@ -30,7 +32,7 @@
 					</div>
 					<div class="info">
 						<h3 class="titulo">Visão</h3>
-						<p>Ser a referência em som automotivo e assistência técnica em Brasília, oferecendo soluções inovadoras e confiáveis que superem as expectativas dos clientes.</p>
+						<p>Ser um instituto que contribui para a proteção dos povos indígenas do Alto Xingu, promovendo suas culturas, direitos, sustentabilidade e bem-estar, com a colaboração de ações comunitárias e parcerias estratégicas.</p>
 					</div>
 				</div>
 				<div class="item">
@@ -39,7 +41,7 @@
 					</div>
 					<div class="info">
 						<h3 class="titulo">Valores</h3>
-						<p>Qualidade, Inovação, Confiança, Atendimento Personalizado e Sustentabilidade.</p>
+						<p>Respeito aos direitos indígenas, valorização da educação, cultura e meio ambiente, além de promover a solidariedade e a colaboração comunitária.</p>
 					</div>
 				</div>
 			</div>

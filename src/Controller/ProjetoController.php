@@ -46,7 +46,7 @@ final class ProjetoController
         }
  
         $data['informacoes'] = array(
-            'titleHeader' => 'Projetos - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Projetos - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'projetos',
             'listagem' => $listaProjetos,
             'paginaAtual' => $paginaAtual,
@@ -68,7 +68,7 @@ final class ProjetoController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Novo Projeto - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Novo Projeto - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'projetos'
         );
 
@@ -90,7 +90,7 @@ final class ProjetoController
         $galeriaFotos = $projeto->selectGaleriaProjeto('*', array('id_projeto' => $args['id']));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Editar Projeto - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Editar Projeto - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'projetos',
             'projeto' => $projetoSelecionado,
             'galeria' => $galeriaFotos

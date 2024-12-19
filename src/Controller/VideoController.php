@@ -46,7 +46,7 @@ final class VideoController
         }
  
         $data['informacoes'] = array(
-            'titleHeader' => 'Videos - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Videos - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'videos',
             'listagem' => $listaVideos,
             'paginaAtual' => $paginaAtual,
@@ -68,7 +68,7 @@ final class VideoController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Novo Video - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Novo Video - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'videos'
         );
 
@@ -88,7 +88,7 @@ final class VideoController
         $videoSelecionado = $video->selectVideo('*', array('id' => $args['id']));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Editar Video - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Editar Video - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'videos',
             'video' => $videoSelecionado,
         );

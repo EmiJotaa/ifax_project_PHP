@@ -46,7 +46,7 @@ final class ConfigController
         }
  
         $data['informacoes'] = array(
-            'titleHeader' => 'Configuração - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Configuração - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'site',
             'listagem' => $listaConfigs,
             'paginaAtual' => $paginaAtual,
@@ -68,7 +68,7 @@ final class ConfigController
         Usuario::verifica_login();
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Nova Configuração - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Nova Configuração - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'site'
         );
 
@@ -88,7 +88,7 @@ final class ConfigController
         $configSelecionado = $config->selectConfig('*', array('id' => $args['id']));
 
         $data['informacoes'] = array(
-            'titleHeader' => 'Editar Configuração - Painel Administrativo - Instituto da família do Alto Xingu',
+            'titleHeader' => 'Editar Configuração - Painel Administrativo - Instituto da Família do Alto Xingu',
             'menuActive' => 'site',
             'config' => $configSelecionado,
         );

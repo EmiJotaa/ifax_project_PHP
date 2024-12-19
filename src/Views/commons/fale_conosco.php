@@ -4,7 +4,7 @@
 			<div class="form">
 				<h2 class="titulo">Nos envie uma mensagem...</h2>
 				<p>Preencha o formulário:</p>
-				<form action="https://formsubmit.co/mrcez4rr@gmail.com" class="form-ajax" method="POST" enctype="multpart/form-data">
+				<form action="https://formsubmit.co/<?=$data['config']['contato_email']?>" class="form-ajax" method="POST" enctype="multpart/form-data">
 					<div class="campo nome">
 						<input type="text" name="Nome" placeholder="Nome" required>
 					</div>
@@ -29,7 +29,7 @@
 				</form>
 				<script>
 					grecaptcha.ready(function() {
-				    	grecaptcha.execute('6LfIgZ8qAAAAABbnHbfvf96QDqB0RfsbsgoLx_sm', { action: 'submit' }).then(function(token) {
+				    	grecaptcha.execute('6Lc2ZqAqAAAAAMMZzHehIFA4elAOxPpgXErL4VGr', { action: 'submit' }).then(function(token) {
 				    	document.getElementById('recaptcha_token').value = token;
 				    });
 				  });
@@ -37,7 +37,7 @@
 
 				<?php
 					if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-					    $recaptcha_secret = '6LfIgZ8qAAAAAOPCqjV9kvw9vFIDAkOT_FtYG_ll';  // Substitua pela sua chave secreta
+					    $recaptcha_secret = 'secret_key';  // Substitua pela sua chave secreta
 					    $recaptcha_token = $_POST['recaptcha_token'];
 
 					    // Verifica o token com a API do Google
@@ -48,7 +48,6 @@
 					        echo 'Verificação do reCAPTCHA falhou, tente novamente.';
 					    } else {
 					        echo 'ReCAPTCHA validado com sucesso!';
-					        // Aqui você pode continuar com o processamento do formulário
 					    }
 					}
 				?>
