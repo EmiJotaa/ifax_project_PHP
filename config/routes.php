@@ -47,6 +47,16 @@ return function (App $app) {
     $app->post('/admin-fotos-create', '\App\Controller\FotoController:insert');
     $app->post('/admin-fotos-edit/{id}', '\App\Controller\FotoController:update');
 
+    //NEWSLETTER
+    $app->get('/admin-newsletter', '\App\Controller\NewsletterListagemController:index');
+    $app->get('/admin-newsletter-create', '\App\Controller\NewsletterListagemController:create');
+    $app->get('/admin-newsletter-edit/{id}', '\App\Controller\NewsletterListagemController:edit');
+    $app->get('/admin-newsletter-delete/{id}', '\App\Controller\NewsletterListagemController:delete');
+    $app->get('/admin-newsletter-enviar/{id}', '\App\Controller\NewsletterListagemController:enviar');
+
+    $app->post('/admin-newsletter-create', '\App\Controller\NewsletterListagemController:insert');
+    $app->post('/admin-newsletter-edit/{id}', '\App\Controller\NewsletterListagemController:update'); 
+
     //USUARIOS
     $app->get('/admin-usuarios', '\App\Controller\AdminController:usuarios');
     $app->get('/admin-usuarios-create', '\App\Controller\AdminController:usuarios_create');

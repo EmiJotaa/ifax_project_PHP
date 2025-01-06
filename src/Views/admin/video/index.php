@@ -35,7 +35,7 @@
 										<td><?=$video['id']?></td>
 										<td>
 											<a href="<?=URL_BASE?>admin-videos-edit/<?=$video['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-videos-delete/<?=$video['id']?>"><i class="fas fa-trash-alt"></i></a>
+											<a href="<?=URL_BASE?>admin-videos-delete/<?=$video['id']?>"><i class="far fa-trash-can"></i></a>
 										</td>
 										<td><?=$video['titulo']?></td>
 										<td><?= date('d/m/Y', strtotime($video['data_cadastro']))?></td>

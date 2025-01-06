@@ -191,5 +191,28 @@ $(document).ready(function(){
           grecaptcha.execute('6Lc2ZqAqAAAAAMMZzHehIFA4elAOxPpgXErL4VGr', {action: 'submit'}).then(function(token) {
           });
         });
-      }
+      }	
 });
+
+
+const $loadingBtn = document.querySelector(".btn");
+const form = document.querySelector(".form-ajax");
+
+form.addEventListener("submit", (event) => {
+  // Verifica se todos os campos obrigatórios estão preenchidos
+  const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+  const allFieldsFilled = [...requiredFields].every((field) => field.value.trim() !== '');
+
+  if (!allFieldsFilled) {
+    event.preventDefault(); // Impede o envio do formulário
+    // Opcional: Adicionar uma mensagem de erro ao usuário
+    alert('Por favor, preencha todos os campos obrigatórios.');
+  } else {
+    // Habilita o botão e mostra o loader
+    $loadingBtn.classList.add("loading");
+  }
+});
+
+
+
+

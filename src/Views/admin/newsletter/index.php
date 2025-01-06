@@ -4,11 +4,11 @@
 		<div class="container">
 			<div class="conteudo">
 				<h2 class="titulo">
-					<i class="far fa-newspaper"></i>Notícias
+					<i class="far fa-envelope"></i>Newsletter
 				</h2>
 				<div class="topo">
 					<div class="botoes">
-						<a href="<?=URL_BASE?>admin-noticias-create" class="btn">Cadastrar Novo</a>
+						<a href="<?=URL_BASE?>admin-newsletter-create" class="btn">Cadastrar Nova</a>
 					</div>
 					<div class="pesquisa">
 						<form action="#" method="GET">
@@ -30,15 +30,16 @@
 						<tbody>
 							<?php						      
 						    if($data['informacoes']['listagem']){
-						        foreach ($data['informacoes']['listagem'] as $noticia) { ?>
+						        foreach ($data['informacoes']['listagem'] as $newsletter) { ?>
 						        	<tr>
-										<td><?=$noticia['id']?></td>
+										<td><?=$newsletter['id']?></td>
 										<td>
-											<a href="<?=URL_BASE?>admin-noticias-edit/<?=$noticia['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-noticias-delete/<?=$noticia['id']?>"><i class="far fa-trash-can"></i></a>
+											<a href="<?=URL_BASE?>admin-newsletter-edit/<?=$newsletter['id']?>"><i class="far fa-edit"></i></a>
+											<a href="<?=URL_BASE?>admin-newsletter-delete/<?=$newsletter['id']?>"><i class="far fa-trash-can"></i></a>
+											<a href="<?=URL_BASE?>admin-newsletter-enviar/<?=$newsletter['id']?>"><i class="far fa-paper-plane"></i></a>
 										</td>
-										<td><?=$noticia['titulo']?></td>
-										<td><?= date('d/m/Y', strtotime($noticia['data_cadastro']))?></td>
+										<td><?=$newsletter['titulo']?></td>
+										<td><?= date('d/m/Y', strtotime($newsletter['data_cadastro']))?></td>
 									</tr>		
 						    <?php   }
 						    }

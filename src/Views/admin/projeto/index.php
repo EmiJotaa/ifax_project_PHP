@@ -35,7 +35,7 @@
 										<td><?=$projeto['id']?></td>
 										<td>
 											<a href="<?=URL_BASE?>admin-projetos-edit/<?=$projeto['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-projetos-delete/<?=$projeto['id']?>"><i class="fas fa-trash-alt"></i></a>
+											<a href="<?=URL_BASE?>admin-projetos-delete/<?=$projeto['id']?>"><i class="far fa-trash-can"></i></a>
 										</td>
 										<td><?=$projeto['titulo']?></td>
 										<td><?= date('d/m/Y', strtotime($projeto['data_cadastro']))?></td>

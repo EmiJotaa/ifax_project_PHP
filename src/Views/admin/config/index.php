@@ -35,7 +35,7 @@
 										<td><?=$config['id']?></td>
 										<td>
 											<a href="<?=URL_BASE?>admin-config-edit/<?=$config['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-config-delete/<?=$config['id']?>"><i class="fas fa-trash-alt"></i></a>
+											<a href="<?=URL_BASE?>admin-config-delete/<?=$config['id']?>"><i class="far fa-trash-can"></i></a>
 										</td>
 										<td><?=$config['nome']?></td>
 										<td><?=$config['valor']?></td>

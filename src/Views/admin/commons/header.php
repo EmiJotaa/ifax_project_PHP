@@ -65,6 +65,10 @@
                             <li class="<?=($data['informacoes']['menuActive'] === 'fotos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-fotos"><i class="far fa-image"></i>Fotos</a></li>
                             <li class="<?=($data['informacoes']['menuActive'] === 'videos') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-videos"><i class="fab fa-youtube"></i>Videos</a></li>
                         </ul>
+                        <p>Comunicação</p>
+                        <ul>
+                            <li class="<?=($data['informacoes']['menuActive'] === 'newsletter') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-newsletter"><i class="far fa-envelope"></i>Newsletter</a></li>
+                        </ul> 
                         <p>Configurações</p>
                         <ul>
                             <li class="<?=($data['informacoes']['menuActive'] === 'usuarios') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-usuarios"><i class="fas fa-user"></i>Usuário</a></li>

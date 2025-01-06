@@ -32,4 +32,10 @@ class Newsletter extends Model {
 	{
 		return $this->select($this->table, $campos, $where);
 	}
+
+	function emailExiste($email)
+    {
+        $resultado = $this->selectNewsletter(["id"], ["email" => $email]);
+        return !empty($resultado); // Se encontrar, retorna true
+    }
 }

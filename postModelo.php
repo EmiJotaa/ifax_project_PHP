@@ -19,13 +19,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     if (empty($nome) || empty($telefone) || empty($email) || empty($assunto) || empty($mensagem)) {
-        header('Location: ' . $_SERVER['HTTP_REFERER'] . '?erro=campos_vazios');
+        header('Location: fale-conosco?erro=campos_vazios');
         exit;
     }
 
-if ($salvar_email_newsletter === 1) {
+ if ($salvar_email_newsletter === 1) {
         $newsletterModel = new \App\Model\Newsletter();
 
+        if ($newsletterModel->emailExiste($email)) {
+            header('Location: fale-conosco?erro=email_ja_cadastrado');
+            exit;
+        }
+
+        // Se não houver duplicata, salva no banco de dados
         $camposNewsletter = [
             'nome' => $nome,
             'email' => $email
@@ -44,7 +50,7 @@ try {
     $mail->Host       = 'smtp.hostinger.com';                     
     $mail->SMTPAuth   = true;                                   
     $mail->Username   = 'contato@marquindosom.com';                     
-    $mail->Password   = '@';                               
+    $mail->Password   = 'Emijota22@';                               
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
     $mail->Port       = 465;                                    
 

@@ -35,7 +35,7 @@
 										<td><?=$foto['id']?></td>
 										<td>
 											<a href="<?=URL_BASE?>admin-fotos-edit/<?=$foto['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-fotos-delete/<?=$foto['id']?>"><i class="fas fa-trash-alt"></i></a>
+											<a href="<?=URL_BASE?>admin-fotos-delete/<?=$foto['id']?>"><i class="far fa-trash-can"></i></a>
 										</td>
 										<td><?=$foto['titulo']?></td>
 										<td><?= date('d/m/Y', strtotime($foto['data_cadastro']))?></td>

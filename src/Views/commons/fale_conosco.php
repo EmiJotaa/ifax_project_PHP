@@ -42,11 +42,17 @@ unset($_SESSION['erros'], $_SESSION['dados']); // Limpa os dados da sessão apó
 				            Desejo receber novidades no meu e-mail.
 				        </label>
 				    </div>
+				    <?php if (isset($_GET['erro']) && $_GET['erro'] == 'email_ja_cadastrado'): ?>
+					    <p style="color: red;">Este E-mail já está cadastrado! Desmarque e prossiga com a mensagem.</p>
+					<?php endif; ?>
 				    <?php if (isset($_GET['erro']) && $_GET['erro'] == 'campos_vazios'): ?>
-					    <p style="color: red;">Por favor, preencha todos os campos com dados válidos.</p>
+					    <p style="color: red;">Por favor, preencha todos os campos com dados válidos!</p>
 					<?php endif; ?>
 					<div class="campo botao">
-						<button type="submit" name="enviar" class="btn">Enviar Mensagem</button>
+						<button type="submit" name="enviar" class="btn">
+							<h3>Enviar Mensagem</h3>
+							<div class="loader"></div>
+						</button>
 					</div>
 				</form>
 				<!-- <script>

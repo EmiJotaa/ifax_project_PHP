@@ -35,7 +35,7 @@
 										<td><?=$usuario['id']?></td>
 										<td>
 											<a href="<?=URL_BASE?>admin-usuarios-edit/<?=$usuario['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-usuarios-delete/<?=$usuario['id']?>"><i class="fas fa-trash-alt"></i></a>
+											<a href="<?=URL_BASE?>admin-usuarios-delete/<?=$usuario['id']?>"><i class="far fa-trash-can"></i></i></a>
 										</td>
 										<td><?=$usuario['nome']?></td>
 										<td><?= date('d/m/Y', strtotime($usuario['data_cadastro']))?></td>
