@@ -21,6 +21,29 @@
 	width: 100%;
 	display: block;
 }
+.fale-conosco .conteudo .form form .newsletter{
+	width: max-content;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+.fale-conosco .conteudo .form form .newsletter label{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	margin-right: 15px;
+	font-family: var(--font-family);
+}
+.fale-conosco .conteudo .form form .newsletter label input{
+	width: 15px;
+ 	height: 15px;
+ 	margin: 0 3px 0 0;
+}
 .fale-conosco .conteudo .mapa
 {
 	margin-top: 40px;

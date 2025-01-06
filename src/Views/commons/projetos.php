@@ -6,6 +6,11 @@
 			</div>
 			<div class="itens">
 				<?php if (isset($data['informacoes']['listaProjetos'])): ?>
+					<?php
+					    usort($data['informacoes']['listaProjetos'], function($a, $b) {
+					        return strtotime($b['data_cadastro']) - strtotime($a['data_cadastro']);
+					    });
+					?>
 					<?php foreach ($data['informacoes']['listaProjetos'] as $projeto): ?>
 						<div class="item">
 							<a href="<?=URL_BASE.'projeto/'.$projeto['url_amigavel']?>">

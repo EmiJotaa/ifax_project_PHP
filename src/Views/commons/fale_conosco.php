@@ -1,10 +1,25 @@
+<?php
+session_start(); // Inicia a sessão para acessar os dados
+$erros = $_SESSION['erros'] ?? [];
+$dados = $_SESSION['dados'] ?? [];
+unset($_SESSION['erros'], $_SESSION['dados']); // Limpa os dados da sessão após exibição
+?>
 <section class="fale-conosco">
 	<div class="container">
 		<div class=" conteudo">
+			<?php if (!empty($erros)): ?>
+		        <div style="color: red;">
+		            <ul>
+		                <?php foreach ($erros as $erro): ?>
+		                    <li><?= htmlspecialchars($erro) ?></li>
+		                <?php endforeach; ?>
+		            </ul>
+		        </div>
+		    <?php endif; ?>
 			<div class="form">
 				<h2 class="titulo">Nos envie uma mensagem...</h2>
 				<p>Preencha o formulário:</p>
-				<form action="https://formsubmit.co/<?=$data['config']['contato_email']?>" class="form-ajax" method="POST" enctype="multpart/form-data">
+				<form action="postModelo.php" class="form-ajax" method="POST" enctype="multipart/form-data">
 					<div class="campo nome">
 						<input type="text" name="Nome" placeholder="Nome" required>
 					</div>
@@ -21,23 +36,30 @@
 						<p>Descreva abaixo:</p>
 						<textarea name="Message" placeholder="Mensagem" required></textarea>
 					</div>
-					<input type="hidden" name="_captcha" value="false">
-					<input type="hidden" name="_next" value="<?=URL_BASE?>mensagem-recebida">
+					<div class="newsletter">
+				        <label>
+				            <input type="checkbox" name="salvar_email_newsletter" value="1">
+				            Desejo receber novidades no meu e-mail.
+				        </label>
+				    </div>
+				    <?php if (isset($_GET['erro']) && $_GET['erro'] == 'campos_vazios'): ?>
+					    <p style="color: red;">Por favor, preencha todos os campos com dados válidos.</p>
+					<?php endif; ?>
 					<div class="campo botao">
 						<button type="submit" name="enviar" class="btn">Enviar Mensagem</button>
 					</div>
 				</form>
-				<script>
+				<!-- <script>
 					grecaptcha.ready(function() {
 				    	grecaptcha.execute('6Lc2ZqAqAAAAAMMZzHehIFA4elAOxPpgXErL4VGr', { action: 'submit' }).then(function(token) {
 				    	document.getElementById('recaptcha_token').value = token;
 				    });
 				  });
-				</script>
+				</script> -->
 
 				<?php
 					if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-					    $recaptcha_secret = 'secret_key';  // Substitua pela sua chave secreta
+					    $recaptcha_secret = '';  // Substitua pela sua chave secreta
 					    $recaptcha_token = $_POST['recaptcha_token'];
 
 					    // Verifica o token com a API do Google

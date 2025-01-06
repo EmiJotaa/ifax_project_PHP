@@ -16,8 +16,9 @@
 	display: block;
 }
 .noticia .conteudo .noticia-detalhe .titulo{
-	font-size: 35px;
+	font-size: 25px;
 	margin-bottom: 25px;
+	font-family: var(--font-family);
 }
 .noticia .conteudo .noticia-detalhe .data{
 	margin-bottom: 25px;
@@ -108,6 +109,7 @@
 }
 .listagem .itens .item a .informacoes .titulo
 {
+	font-family: var(--font-family);
 	font-size: 25px;
 	line-height: 25px;
 	margin-bottom: 25px;
@@ -143,13 +145,13 @@
 		width: 66%;
 	}
 	.noticia .conteudo .noticia-detalhe .titulo{
-		font-size: 65px;
+		font-size: 35px;
 	}
 	.noticia .conteudo .listagem{
 		width: 30%;
 		display: block;
 	}
 	.listagem .titulo{
-		margin-bottom: 80px;
+		margin-bottom: 47px;
 	}
 }
