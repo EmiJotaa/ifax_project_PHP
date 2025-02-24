@@ -12,7 +12,7 @@
 					</div>
 					<div class="pesquisa">
 						<form action="#" method="GET">
-							<input type="text" name="search" value="<?=(isset($_GET['search'])) ? $_GET['search'] : ''?>" placeholder="Titulo do item...">
+							<input type="text" name="search" value="<?=(isset($_GET['search'])) ? $_GET['search'] : ''?>" placeholder="Nome do assinante...">
 							<input type="submit" value="Pesquisar" class="btn">
 						</form>
 					</div>

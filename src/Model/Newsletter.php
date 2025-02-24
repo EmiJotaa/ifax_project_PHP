@@ -48,7 +48,7 @@ class Newsletter extends Model {
  
 	function selectNewslettersPesquisa($pesquisa)
 	{
-		$sql = "SELECT * FROM ".$this->table." WHERE titulo LIKE '%".$pesquisa."%' ORDER BY id DESC";
+		$sql = "SELECT * FROM ".$this->table." WHERE nome LIKE '%".$pesquisa."%' ORDER BY id DESC";
  
 		return $this->querySelect($sql);
 	}
