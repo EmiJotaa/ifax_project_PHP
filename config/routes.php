@@ -57,6 +57,16 @@ return function (App $app) {
     $app->post('/admin-newsletter-create', '\App\Controller\NewsletterListagemController:insert');
     $app->post('/admin-newsletter-edit/{id}', '\App\Controller\NewsletterListagemController:update'); 
 
+    //NEWSLETER-ASSINATURAS-CADASTRADAS
+    $app->get('/admin-newsletter-assinaturas-cadastradas', '\App\Controller\NewsletterUsuariosController:index');
+    $app->get('/admin-newsletter-assinaturas-create', '\App\Controller\NewsletterUsuariosController:create');
+    $app->get('/admin-newsletter-assinaturas-edit/{id}', '\App\Controller\NewsletterUsuariosController:edit');
+    $app->get('/admin-newsletter-assinaturas-delete/{id}', '\App\Controller\NewsletterUsuariosController:delete');
+
+    $app->post('/admin-newsletter-assinaturas-create', '\App\Controller\NewsletterUsuariosController:insert');
+    $app->post('/admin-newsletter-assinaturas-edit/{id}', '\App\Controller\NewsletterUsuariosController:update');
+
+
     //USUARIOS
     $app->get('/admin-usuarios', '\App\Controller\AdminController:usuarios');
     $app->get('/admin-usuarios-create', '\App\Controller\AdminController:usuarios_create');

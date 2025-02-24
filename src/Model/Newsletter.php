@@ -38,4 +38,24 @@ class Newsletter extends Model {
         $resultado = $this->selectNewsletter(["id"], ["email" => $email]);
         return !empty($resultado); // Se encontrar, retorna true
     }
+
+    function selectNewslettersPage($limit, $offset)
+	{
+		$sql = "SELECT * FROM ".$this->table." ORDER BY id DESC LIMIT ".$offset.", ".$limit;
+ 
+		return $this->querySelect($sql);
+	}
+ 
+	function selectNewslettersPesquisa($pesquisa)
+	{
+		$sql = "SELECT * FROM ".$this->table." WHERE titulo LIKE '%".$pesquisa."%' ORDER BY id DESC";
+ 
+		return $this->querySelect($sql);
+	}
+
+		function getUltimoNewsletter()
+	{
+		$sql = "SELECT * FROM ".$this->table." ORDER BY id DESC LIMIT 1";
+		return $this->querySelect($sql)[0];
+	}
 }

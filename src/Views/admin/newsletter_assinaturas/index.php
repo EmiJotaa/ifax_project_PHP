@@ -4,11 +4,11 @@
 		<div class="container">
 			<div class="conteudo">
 				<h2 class="titulo">
-					<i class="far fa-envelope"></i>Newsletter
+					<i class="fas fa-users"></i>Newsletter - Assinaturas cadastradas
 				</h2>
 				<div class="topo">
 					<div class="botoes">
-						<a href="<?=URL_BASE?>admin-newsletter-create" class="btn">Cadastrar Nova</a>						
+						<a href="<?=URL_BASE?>admin-newsletter-assinaturas-create" class="btn">Cadastrar Nova</a>						
 					</div>
 					<div class="pesquisa">
 						<form action="#" method="GET">
@@ -23,7 +23,8 @@
 							<tr>
 								<td>ID</td>
 								<td>AÇÕES</td>
-								<td>TÍTULO</td>
+								<td>EMAIL</td>
+								<td>NOME</td>								
 								<td>DATA DE CADASTRO</td>
 							</tr>
 						</thead>
@@ -34,11 +35,11 @@
 						        	<tr>
 										<td><?=$newsletter['id']?></td>
 										<td>
-											<a href="<?=URL_BASE?>admin-newsletter-edit/<?=$newsletter['id']?>"><i class="far fa-edit"></i></a>
-											<a href="<?=URL_BASE?>admin-newsletter-delete/<?=$newsletter['id']?>"><i class="far fa-trash-can"></i></a>
-											<a href="<?=URL_BASE?>admin-newsletter-enviar/<?=$newsletter['id']?>"><i class="far fa-paper-plane"></i></a>
+											<a href="<?=URL_BASE?>admin-newsletter-assinaturas-edit/<?=$newsletter['id']?>"><i class="far fa-edit"></i></a>
+											<a href="<?=URL_BASE?>admin-newsletter-assinaturas-delete/<?=$newsletter['id']?>"><i class="far fa-trash-can"></i></a>
 										</td>
-										<td><?=$newsletter['titulo']?></td>
+										<td><?=$newsletter['email']?></td>
+										<td><?=$newsletter['nome']?></td>
 										<td><?= date('d/m/Y', strtotime($newsletter['data_cadastro']))?></td>
 									</tr>		
 						    <?php   }
