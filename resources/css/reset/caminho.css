@@ -1,7 +1,7 @@
 .caminho
 {
 	width: 100%;
-	display: block;
+	display: none;
 	background-color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -79,6 +79,10 @@
 {
 	transform: scale(1.1);
 }
+.caminho .conteudo ul li:hover:last-child
+{
+	transform: scale(1.02);
+}
 .caminho .conteudo ul li:before
 {
 	width: 13px;
@@ -101,6 +105,13 @@
 .caminho .conteudo ul li:first-child
 {
 	padding-left: 0px;
+}
+@media only screen and (min-width:768px)
+{
+    .caminho
+    {
+        display: block;
+    }
 }
 @media only screen and (min-width:1160px)
 {

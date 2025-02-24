@@ -49,14 +49,14 @@ try {
     $mail->isSMTP();                                            
     $mail->Host       = 'smtp.hostinger.com';                     
     $mail->SMTPAuth   = true;                                   
-    $mail->Username   = 'contato@marquindosom.com';                     
-    $mail->Password   = 'Emijota22@';                               
+    $mail->Username   = 'contato@ifax.com.br';                     
+    $mail->Password   = 'Mayupi10@';                               
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
     $mail->Port       = 465;                                    
 
     //Recipients
-    $mail->setFrom('contato@marquindosom.com', "Caixa de entrada");
-    $mail->addAddress('mrcez4rr@gmail.com', 'Marco');
+    $mail->setFrom('contato@ifax.com.br', "Caixa de entrada");
+    $mail->addAddress('institutoifax@gmail.com', 'Instituto Fámilia do Alto Xingu');
     $mail->addReplyTo($email, $nome);
 
 
@@ -73,7 +73,7 @@ try {
 
     $mail->send();
 
-    header("Location:/ifax/mensagem-recebida");
+    header("Location:/mensagem-recebida");
     exit;
 
 }catch (Exception $e) {

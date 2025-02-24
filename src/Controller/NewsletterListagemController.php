@@ -156,13 +156,13 @@ final class NewsletterListagemController
         $mail->isSMTP();                                            
         $mail->Host       = 'smtp.hostinger.com';                     
         $mail->SMTPAuth   = true;                                   
-        $mail->Username   = 'contato@marquindosom.com';                     
-        $mail->Password   = 'Emijota22@';                               
+        $mail->Username   = 'contato@ifax.com.br';                     
+        $mail->Password   = 'Mayupi10@';                               
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
         $mail->Port       = 465;
 
         // De quem está enviando
-        $mail->setFrom('contato@marquindosom.com', 'Instituto da Família do Alto Xingu');
+        $mail->setFrom('contato@ifax.com.br', 'Instituto da Família do Alto Xingu');
 
         // Assunto do e-mail
         $assunto = $newsletterSelecionado[0]['titulo'];

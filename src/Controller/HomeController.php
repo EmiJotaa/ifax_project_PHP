@@ -354,7 +354,7 @@ final class HomeController
         return $renderer->render($response, "projeto.php", $data);
     }
 
-    public function mensagem_recebida(
+    public function mensagem_recebida( 
         ServerRequestInterface $request, 
         ResponseInterface $response,
         $args

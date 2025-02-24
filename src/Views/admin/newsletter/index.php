@@ -9,6 +9,7 @@
 				<div class="topo">
 					<div class="botoes">
 						<a href="<?=URL_BASE?>admin-newsletter-create" class="btn">Cadastrar Nova</a>
+						<a href="<?=URL_BASE?>admin-newsletter-create" class="btn">Usuarios Cadastrados</a>
 					</div>
 					<div class="pesquisa">
 						<form action="#" method="GET">

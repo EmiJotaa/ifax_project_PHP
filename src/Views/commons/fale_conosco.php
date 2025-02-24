@@ -55,17 +55,17 @@ unset($_SESSION['erros'], $_SESSION['dados']); // Limpa os dados da sessão apó
 						</button>
 					</div>
 				</form>
-				<!-- <script>
+				<script>
 					grecaptcha.ready(function() {
 				    	grecaptcha.execute('6Lc2ZqAqAAAAAMMZzHehIFA4elAOxPpgXErL4VGr', { action: 'submit' }).then(function(token) {
 				    	document.getElementById('recaptcha_token').value = token;
 				    });
 				  });
-				</script> -->
+				</script>
 
 				<?php
 					if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-					    $recaptcha_secret = '';  // Substitua pela sua chave secreta
+					    $recaptcha_secret = '6Lc2ZqAqAAAAABs9E7FAG4i43s7pPUG8CiskzRkl';  // Substitua pela sua chave secreta
 					    $recaptcha_token = $_POST['recaptcha_token'];
 
 					    // Verifica o token com a API do Google
