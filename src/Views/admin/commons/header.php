@@ -72,7 +72,7 @@
                         </ul> 
                         <p>Configurações</p>
                         <ul>
-                            <li class="<?=($data['informacoes']['menuActive'] === 'usuarios') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-assinaturas"><i class="fas fa-user"></i>Usuário</a></li>
+                            <li class="<?=($data['informacoes']['menuActive'] === 'usuarios') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-usuarios"><i class="fas fa-user"></i>Usuário</a></li>
                             <li class="<?=($data['informacoes']['menuActive'] === 'site') ? 'active' : '' ?>"><a href="<?=URL_BASE?>admin-config"><i class="fas fa-gears"></i>Site</a></li>
                             <li><a href="<?=URL_BASE?>logout"><i class="fas fa-right-from-bracket"></i>Sair</a></li>
                         </ul>    
